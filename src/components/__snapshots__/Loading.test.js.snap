@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading matches a snapshot 1`] = `
+<body>
+  <main>
+    <h1>
+      ...LOADING
+    </h1>
+    <img
+      src="../assets/logo.png"
+    />
+  </main>
+</body>
+`;

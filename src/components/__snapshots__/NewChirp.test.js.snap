@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewChirp matches a snapshot 1`] = `
+<div
+  className="newChirp"
+>
+  <img
+    src="../assets/prof-pic.png"
+    width="30px"
+  />
+  <form>
+    <textarea />
+    <button
+      type="submit"
+    >
+      Chirp!
+    </button>
+  </form>
+</div>
+`;

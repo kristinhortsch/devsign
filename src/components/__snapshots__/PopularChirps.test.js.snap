@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopularChirps matches a snapshot 1`] = `
+<main>
+  <h2>
+    Popular Chirps
+  </h2>
+  <ul>
+    <li>
+      <section>
+        <h4>
+          UserName
+        </h4>
+        <p>
+          @userhandle
+        </p>
+        <p>
+          CHIRP CONTENT
+        </p>
+      </section>
+    </li>
+    <li>
+      <section>
+        <h4>
+          UserName
+        </h4>
+        <p>
+          @userhandle
+        </p>
+        <p>
+          CHIRP CONTENT
+        </p>
+      </section>
+    </li>
+    <li>
+      <section>
+        <h4>
+          UserName
+        </h4>
+        <p>
+          @userhandle
+        </p>
+        <p>
+          CHIRP CONTENT
+        </p>
+      </section>
+    </li>
+    <li>
+      <section>
+        <h4>
+          UserName
+        </h4>
+        <p>
+          @userhandle
+        </p>
+        <p>
+          CHIRP CONTENT
+        </p>
+      </section>
+    </li>
+    <li>
+      <section>
+        <h4>
+          UserName
+        </h4>
+        <p>
+          @userhandle
+        </p>
+        <p>
+          CHIRP CONTENT
+        </p>
+      </section>
+    </li>
+  </ul>
+</main>
+`;

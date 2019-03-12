@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trending matches a snapshot 1`] = `
+<aside>
+  <h3>
+    Trending
+  </h3>
+  <ul>
+    <li>
+      #Trending 1
+    </li>
+    <li>
+      #Trending 2
+    </li>
+    <li>
+      #Trending 3
+    </li>
+    <li>
+      #Trending 4
+    </li>
+    <li>
+      #Trending 5
+    </li>
+  </ul>
+</aside>
+`;

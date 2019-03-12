@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiniProfile matches a snapshot 1`] = `
+<aside>
+  <img
+    src="../assets/prof-pic.png"
+    width="30px"
+  />
+  <h3>
+    User Name
+  </h3>
+  <hr />
+  <p>
+    Chirps: 593
+  </p>
+  <p>
+    Followers: 388
+  </p>
+</aside>
+`;
