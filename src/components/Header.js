@@ -16,7 +16,7 @@ export default function Header() {
         <ModalContainerChirp />
         
         <img src="../assets/logo.png" width="40px" alt="logo"/>
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Search" name="search" />
         <Link to="/profile"><img src="../assets/prof-pic.png" width="40px" alt="prof pic logo"/></Link>
       </nav>
     </header>

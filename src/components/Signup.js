@@ -5,16 +5,16 @@ export default function Signup() {
   return (
     <form >
       <label> Name
-        <input type="text" />
+        <input type="text" name="name"/>
       </label>
       <label> Email
-        <input type="text" />
+        <input type="text" name="email" />
       </label>
       <label> Username
-        <input type="text" />
+        <input type="text" name="username"/>
       </label>
       <label> Password
-        <input type="password" />
+        <input type="password" name="password"/>
       </label>
       <button type="submit">Signup</button>
     </form>

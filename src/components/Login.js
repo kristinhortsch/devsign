@@ -24,10 +24,10 @@ export default function Login() {
       <main>
         <form>
           <label> Username
-            <input type="text" />
+            <input type="text" name="username" />
           </label>
           <label> Password
-            <input type="text" />
+            <input type="text" name="password" />
           </label>
           <Link to='/home'><button type="submit">Login</button></Link>
         </form>
