@@ -4,6 +4,15 @@ import { connect } from 'react-redux';
 import SignupModal from '../components/SignupModal';
 import { showModal, hideModal } from '../actions/modal';
 import { isOpen } from '../selectors/modal';
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background: #00bfff;
+  color: white;
+  padding: 8px;
+  border-radius: 7px;
+  border: 1 px solid darkgray;
+`;
 
 export const withModalContainer = Component => {
   class WithModalContainer extends React.PureComponent {
@@ -16,7 +25,7 @@ export const withModalContainer = Component => {
     render() {
       return (
         <div> 
-          <button type="submit" onClick={this.props.show}>Sign Up</button>
+          <Button type="submit" onClick={this.props.show}>Sign Up</Button>
           <Component show={this.props.isOpen} onClose={this.props.hide} />
         </div>  
       );

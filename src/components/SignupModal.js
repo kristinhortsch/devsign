@@ -46,7 +46,7 @@ export default class SignupModal extends React.PureComponent {
       <Section>
         <div className="backdropStyle">
           <div className="signupModal">
-          <button onClick={this.props.onClose} className="closeButton">
+            <button onClick={this.props.onClose} className="closeButton">
               <FontAwesomeIcon icon="window-close" className="close"/>
             </button>
             <h3>Sign Up</h3>

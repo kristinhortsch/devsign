@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
-  background: lightgray;
+  background: #00bfff;
+  color: white;
   text-align: center;
   padding: 2px;
   width: 100vw;
   position: absolute;
-  bottom: 0;
+  bottom:
 `;
 export default function Footer() {
   return (
