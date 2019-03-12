@@ -18,8 +18,42 @@ const Main = styled.main`
   th {
     font-weight: 200;
   }
-  table {
+  table {    
     text-align: center;
+    
+  }
+  .section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  h3 {
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.1em;
+  }
+  .info {
+    display: flex;
+  }
+  .name {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .description {
+    margin-left: 10px;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  h2 {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 5px;
   }
 `;
 export default function DesktopProfile() {
@@ -29,26 +63,34 @@ export default function DesktopProfile() {
       <Main>
         <section>
           <img src="../assets/background.jpg" alt="background" className="background"/>
-          <img src="../assets/prof-pic.png" alt="prof pic" className="prof"/>
-          <table>
-            <tr>
-              <th>Chirps</th>
-              <th>Followers</th>
-              <th>Following</th>
-            </tr>
-            <tr>
-              <td>593</td>
-              <td>388</td>
-              <td>301</td>
-            </tr>
-          </table>
+          <div className="section">
+            <img src="../assets/prof-pic.png" alt="prof pic" className="prof"/>
+            <table>
+              <tr>
+                <th>Chirps</th>
+                <th>Followers</th>
+                <th>Following</th>
+              </tr>
+              <tr>
+                <td>593</td>
+                <td>388</td>
+                <td>301</td>
+              </tr>
+            </table>
+          </div>
         </section>
 
-        <aside>
-          <h3>User Name</h3>
-          <p>User Handle</p>
-          <p>Description</p>
-        </aside>
+        <section className="info">
+          <div className="name">
+            <h3>Kristin Hortsch</h3>
+            <p>@kristinhortsch</p>
+          </div>
+          <div className="description">
+            <p>Description</p>
+          </div>
+        </section>
+
+        <hr></hr>
 
         <section>
           <h2>Tweets</h2>
