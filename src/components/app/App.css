@@ -1,4 +1,10 @@
 * {
+  .signupModal {
+    background: black;
+    width: 40%;
+    margin: 50% auto;
+    padding: 100px;
+  }
   .backdropStyle {
     position: fixed;
     top: 0;
@@ -8,4 +14,6 @@
     z-index: 1;
     background-color: blue;
   };
+ 
+  
 }

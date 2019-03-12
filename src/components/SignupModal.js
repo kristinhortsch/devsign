@@ -15,11 +15,14 @@ export default class SignupModal extends React.PureComponent {
     }
     return (
       <div className={styles.backdropStyle}>
-        <button onClick={this.props.onClose}>
-          X
-        </button>
-        <Signup />
+        <div className={styles.signupModal}>
+          <button onClick={this.props.onClose}>
+            X
+          </button>
+          <Signup />
+        </div>
       </div>
     );
   }
 }
+

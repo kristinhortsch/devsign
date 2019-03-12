@@ -15,10 +15,10 @@ export const withModalContainer = Component => {
   
     render() {
       return (
-        <> 
+        <div> 
           <button type="submit" onClick={this.props.show}>Sign Up</button>
           <Component show={this.props.isOpen} onClose={this.props.hide} />
-        </>  
+        </div>  
       );
     }
   }

@@ -1,7 +1,6 @@
 import React from 'react';
 import NewChirp from './NewChirp';
 import PropTypes from 'prop-types';
-import styles from './app/App.css';
 
 export default class ChirpModal extends React.PureComponent {
   static propTypes = {
@@ -14,7 +13,7 @@ export default class ChirpModal extends React.PureComponent {
       return null;
     }
     return (
-      <div className={styles.backdropStyle}>
+      <div>
         <button onClick={this.props.onClose}>
           X
         </button>

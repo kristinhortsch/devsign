@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Footer from './Footer';
-import SingupModalContainer from '../containers/ModalContainerSignup'
+import SingupModalContainer from '../containers/ModalContainerSignup';;
 
-export default function DesktopLogin() {
+export default function Login() {
   return (
-    <body>
+    <Fragment>
       <header>
         <h1>Warble</h1>
         <img src="../assets/logo.png" width="40px"/>
@@ -36,6 +36,6 @@ export default function DesktopLogin() {
       </main>
 
       <Footer />
-    </body>
+    </Fragment>
   );
 }

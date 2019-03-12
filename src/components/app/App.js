@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../Home';
 import Profile from '../Profile';
@@ -12,14 +12,14 @@ library.add(faHome);
 
 export default function App() {
   return (
-    <>
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Login} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/profile" component={Profile} />
-      </Switch>
-    </Router>
-    </>
+    <Fragment>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/profile" component={Profile} />
+        </Switch>
+      </Router>
+    </Fragment>
   );
 }
