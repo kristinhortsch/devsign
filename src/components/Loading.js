@@ -5,7 +5,7 @@ export default function Loading() {
     <body>
       <main>
         <h1>...LOADING</h1>
-        <img src="../assets/logo.png"/>
+        <img src="../assets/logo.png" alt="logo"/>
       </main>
     </body>
   );

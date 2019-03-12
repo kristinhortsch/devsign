@@ -1,8 +1,9 @@
 import React from 'react';
+import '../css/signup.css';
 
 export default function Signup() {
   return (
-    <form>
+    <form >
       <label> Name
         <input type="text" />
       </label>

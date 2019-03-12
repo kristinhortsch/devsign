@@ -5,7 +5,7 @@ import Profile from '../Profile';
 import Login from '../Login';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import './App.css';
+import '../../css/App.css';
 import 'normalize.css';
 
 library.add(faHome);

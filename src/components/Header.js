@@ -2,22 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ModalContainerChirp from '../containers/ModalContainerChirp';
-import './app/App.css';
+import styles from '../css/Header.css';
 
 export default function Header() {
   return (
     <header>
-      <h1>Warble</h1>
-      <nav>
+      <h1 className={styles.warble}>Warble</h1>
+      <nav className={styles.nav}>
         <Link to="/home">
-          <FontAwesomeIcon icon="home"/>
+          <FontAwesomeIcon icon="home" className={styles.home}/>
         </Link>
         
         <ModalContainerChirp />
         
-        <img src="../assets/logo.png" width="40px"/>
+        <img src="../assets/logo.png" width="40px" alt="logo"/>
         <input type="text" placeholder="Search" />
-        <Link to="/profile"><img src="../assets/prof-pic.png" width="30px"/></Link>
+        <Link to="/profile"><img src="../assets/prof-pic.png" width="40px" alt="prof pic logo"/></Link>
       </nav>
     </header>
   );

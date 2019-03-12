@@ -1,13 +1,15 @@
 import React, { Fragment } from 'react';
 import Footer from './Footer';
-import SingupModalContainer from '../containers/ModalContainerSignup';;
+import SingupModalContainer from '../containers/ModalContainerSignup';
+import { Link } from 'react-router-dom';
+import '../css/App.css';
 
 export default function Login() {
   return (
     <Fragment>
       <header>
         <h1>Warble</h1>
-        <img src="../assets/logo.png" width="40px"/>
+        <img src="../assets/logo.png" width="40px" alt="logo"/>
       </header>
 
       <aside>
@@ -27,7 +29,7 @@ export default function Login() {
           <label> Password
             <input type="text" />
           </label>
-          <button type="submit">Login</button>
+          <Link to='/home'><button type="submit">Login</button></Link>
         </form>
         <p>New user?</p>
         

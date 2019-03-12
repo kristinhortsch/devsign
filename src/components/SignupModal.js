@@ -1,7 +1,7 @@
 import React from 'react';
 import Signup from './Signup';
 import PropTypes from 'prop-types';
-import styles from './app/App.css';
+import styles from '../css/signup.css';
 
 export default class SignupModal extends React.PureComponent {
   static propTypes = {
@@ -16,9 +16,10 @@ export default class SignupModal extends React.PureComponent {
     return (
       <div className={styles.backdropStyle}>
         <div className={styles.signupModal}>
-          <button onClick={this.props.onClose}>
+          <button onClick={this.props.onClose} className={styles.closeButton}>
             X
           </button>
+          <h3>Sign Up</h3>
           <Signup />
         </div>
       </div>

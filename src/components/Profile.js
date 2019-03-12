@@ -8,8 +8,8 @@ export default function DesktopProfile() {
       <Header />
       <main>
         <section>
-          <img src="../assets/background.jpg"/>
-          <img src="../assets/prof-pic.png" width="300px"/>
+          <img src="../assets/background.jpg" alt="background"/>
+          <img src="../assets/prof-pic.png" width="300px" alt="prof pic"/>
           <p>Chirps: 593</p>
           <p>Followers: 388</p>
           <p>Following: 301</p>
