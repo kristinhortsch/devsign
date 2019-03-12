@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ModalContainer from '../containers/ModalContainer';
+import ModalContainerChirp from '../containers/ModalContainerChirp';
 import './app/App.css';
 
 export default function Header() {
@@ -13,7 +13,7 @@ export default function Header() {
           <FontAwesomeIcon icon="home"/>
         </Link>
         
-        <ModalContainer />
+        <ModalContainerChirp />
         
         <img src="../assets/logo.png" width="40px"/>
         <input type="text" placeholder="Search" />

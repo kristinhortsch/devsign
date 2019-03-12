@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import SingupModalContainer from '../containers/ModalContainerSignup'
 
 export default function DesktopLogin() {
   return (
@@ -19,13 +20,19 @@ export default function DesktopLogin() {
       </aside>
 
       <main>
-        <label> Username
-          <input type="text" />
-        </label>
-        <label> Password
-          <input type="text" />
-        </label>
-        <button type="submit">Login</button>
+        <form>
+          <label> Username
+            <input type="text" />
+          </label>
+          <label> Password
+            <input type="text" />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+        <p>New user?</p>
+        
+
+        <SingupModalContainer />
       </main>
 
       <Footer />

@@ -1,9 +1,9 @@
 import React from 'react';
-import NewChirp from './NewChirp';
+import Signup from './Signup';
 import PropTypes from 'prop-types';
 import styles from './app/App.css';
 
-export default class ChirpModal extends React.PureComponent {
+export default class SignupModal extends React.PureComponent {
   static propTypes = {
     onClose: PropTypes.func.isRequired,
     show: PropTypes.bool
@@ -18,7 +18,7 @@ export default class ChirpModal extends React.PureComponent {
         <button onClick={this.props.onClose}>
           X
         </button>
-        <NewChirp />
+        <Signup />
       </div>
     );
   }
