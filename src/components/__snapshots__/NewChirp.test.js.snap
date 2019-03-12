@@ -1,10 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NewChirp matches a snapshot 1`] = `
-<div
-  className="newChirp"
->
+<div>
   <img
+    alt="prof pic"
     src="../assets/prof-pic.png"
     width="30px"
   />
