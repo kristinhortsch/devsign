@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Trending from './Trending';
 import PopularChirps from './PopularChirps';
 import MiniProfile from './MiniProfile';
+import ModalContainerChirp from '../containers/ModalContainerChirp';
 import '../css/App.css';
 
 export default function DesktopHome() {
@@ -16,6 +17,8 @@ export default function DesktopHome() {
       <Trending />
 
       <PopularChirps />
+
+      <ModalContainerChirp />
 
       <Footer />
     </body>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import ModalContainerChirp from '../containers/ModalContainerChirp';
 
 export default function DesktopProfile() {
   return (
@@ -43,6 +44,9 @@ export default function DesktopProfile() {
           </ul>
         </aside>
       </main>
+
+      <ModalContainerChirp />
+      
       <Footer />
     </body>
   );

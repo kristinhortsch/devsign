@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ModalContainerChirp from '../containers/ModalContainerChirp';
 import styles from '../css/Header.css';
 
 export default function Header() {
@@ -13,12 +12,11 @@ export default function Header() {
           <FontAwesomeIcon icon="home" className={styles.home}/>
         </Link>
         
-        <ModalContainerChirp />
         
         <img src="../assets/logo.png" width="40px" alt="logo"/>
-        <input type="text" placeholder="Search" name="search" />
         <Link to="/profile"><img src="../assets/prof-pic.png" width="40px" alt="prof pic logo"/></Link>
       </nav>
+      <input type="text" placeholder="Search" name="search" />
     </header>
   );
 }
