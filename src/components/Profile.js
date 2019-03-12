@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import Chirp from './Chirp';
 import ModalContainerChirp from '../containers/ModalContainerChirp';
 import styled from 'styled-components';
-
+import 'normalize.css';
 const Main = styled.main`
   .background {
     height: 100px;
@@ -20,7 +21,6 @@ const Main = styled.main`
   }
   table {    
     text-align: center;
-    
   }
   .section {
     display: flex;
@@ -54,6 +54,21 @@ const Main = styled.main`
     font-weight: 300;
     text-align: center;
     margin-top: 5px;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    border: 1px solid lightgray;
+    margin: 15px 15px;
+    padding: 10px;
+  }
+ 
+  @media only screen and (max-width:600px)  { 
+    .trending {
+      display: none;
+    }
   }
 `;
 export default function DesktopProfile() {
@@ -95,15 +110,15 @@ export default function DesktopProfile() {
         <section>
           <h2>Tweets</h2>
           <ul>
-            <li>Tweet 1</li>
-            <li>Tweet 2</li>
-            <li>Tweet 3</li>
-            <li>Tweet 4</li>
-            <li>Tweet 5</li>
+            <li><Chirp /></li>
+            <li><Chirp /></li>
+            <li><Chirp /></li>
+            <li><Chirp /></li>
+            <li><Chirp /></li>
           </ul>
         </section>
 
-        <aside>
+        <aside className="trending">
           <h3>Trending</h3> 
           <ul>
             <li>#Trending 1</li>

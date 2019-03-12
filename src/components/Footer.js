@@ -1,10 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const Section = styled.section`
+  background: lightgray;
+  text-align: center;
+  padding: 2px;
+`;
 export default function Footer() {
   return (
-    <footer>
-      <p>© Warble | 2019 </p>
-    </footer>
+    <Section>
+      <footer>
+        <p>© Warble | 2019 </p>
+      </footer>
+    </Section>
   );
 }
 
