@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section` 
+  width: 100vw;
   margin-top: 0;
   display: flex;
   h4 {
@@ -11,6 +12,7 @@ const Section = styled.section`
   .info {
     display: flex;
     flex-direction: column;
+    width: 70vw;
   }
   img {
     margin-right: 10px;
@@ -26,7 +28,7 @@ export default function Chirp() {
       <div className="info">
         <h4>UserName</h4>
         <p className="handle">@userhandle</p>
-        <p>My name is somewhat extravagant, and I want to cut back. It's the good costumes, all year long. #mybite #randomtweet</p>
+        <p>My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet</p>
       </div>
     </Section>
   );

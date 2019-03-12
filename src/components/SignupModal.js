@@ -2,6 +2,34 @@ import React from 'react';
 import Signup from './Signup';
 import PropTypes from 'prop-types';
 import styles from '../css/signup.css';
+import styled from 'styled-components';
+
+const Section = styled.section`
+.backdropStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(178, 178, 187, 0.479);
+  .signupModal {
+    background: white;
+    width: 40%;
+    margin: 50% auto;
+    padding: 100px;
+    box-shadow: 2px 2px 5px blue;
+    position: relative;
+    .closeButton {
+      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-bottom: 3%;
+    }
+  }
+}
+`;
 
 export default class SignupModal extends React.PureComponent {
   static propTypes = {
@@ -14,15 +42,17 @@ export default class SignupModal extends React.PureComponent {
       return null;
     }
     return (
-      <div className={styles.backdropStyle}>
-        <div className={styles.signupModal}>
-          <button onClick={this.props.onClose} className={styles.closeButton}>
-            X
-          </button>
-          <h3>Sign Up</h3>
-          <Signup />
+      <Section>
+        <div className="backdropStyle">
+          <div className="signupModal">
+            <button onClick={this.props.onClose} className={styles.closeButton}>
+              X
+            </button>
+            <h3>Sign Up</h3>
+            <Signup />
+          </div>
         </div>
-      </div>
+      </Section>
     );
   }
 }

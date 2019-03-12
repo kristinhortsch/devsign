@@ -6,15 +6,10 @@ import { showModal, hideModal } from '../actions/modal';
 import { isOpen } from '../selectors/modal';
 import styled from 'styled-components';
 
-const Button = styled.button`
-  border: 2px solid blue;
-  border-radius: 5px;
-  background: white;
-  box-shadow: 2px 2px black;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  padding: 5px;
+const Section = styled.section`
+  img { 
+    width: 40px;
+  }
 `;
 export const withModalContainer = Component => {
   class WithModalContainer extends React.PureComponent {
@@ -26,10 +21,10 @@ export const withModalContainer = Component => {
   
     render() {
       return (
-        <> 
-          <Button type="submit" onClick={this.props.show}>Chirp</Button>
+        <Section> 
+          <button type="submit" onClick={this.props.show}><img src='../../assets/logo.png' /></button>
           <Component show={this.props.isOpen} onClose={this.props.hide} />
-        </>  
+        </Section>  
       );
     }
   }
