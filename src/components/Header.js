@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ModalContainer from '../containers/ModalContainer';
+import './app/App.css';
 
 export default function Header() {
   return (

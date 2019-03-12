@@ -15,14 +15,10 @@ export default class Modal extends React.PureComponent {
     }
     return (
       <div className={styles.backdropStyle}>
-        <div className={styles.modalStyle}>
-          <NewChirp />
-          <div className={styles.footer}>
-            <button onClick={this.props.onClose}>
-              Close
-            </button>
-          </div>
-        </div>
+        <button onClick={this.props.onClose}>
+          X
+        </button>
+        <NewChirp />
       </div>
     );
   }
