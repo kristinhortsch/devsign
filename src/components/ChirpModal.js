@@ -2,6 +2,7 @@ import React from 'react';
 import NewChirp from './NewChirp';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Section = styled.section`
 .backdropStyle {
@@ -29,7 +30,11 @@ const Section = styled.section`
       top: 0;
       right: 0;
       margin-bottom: 3%;
+      color: red;
     }
+  }
+  h3 {
+    font-weight: 200;
   }
 }
 `;
@@ -49,7 +54,7 @@ export default class ChirpModal extends React.PureComponent {
         <div className="backdropStyle">
           <div className="chirpModal">
             <button onClick={this.props.onClose} className="closeButton">
-              X
+              <FontAwesomeIcon icon="window-close" className="close"/>
             </button>
             <h3>New Chirp</h3>
             <NewChirp />

@@ -1,8 +1,8 @@
 import React from 'react';
 import Signup from './Signup';
 import PropTypes from 'prop-types';
-import styles from '../css/signup.css';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Section = styled.section`
 .backdropStyle {
@@ -26,6 +26,7 @@ const Section = styled.section`
       top: 0;
       right: 0;
       margin-bottom: 3%;
+      color: red;
     }
   }
 }
@@ -45,8 +46,8 @@ export default class SignupModal extends React.PureComponent {
       <Section>
         <div className="backdropStyle">
           <div className="signupModal">
-            <button onClick={this.props.onClose} className={styles.closeButton}>
-              X
+          <button onClick={this.props.onClose} className="closeButton">
+              <FontAwesomeIcon icon="window-close" className="close"/>
             </button>
             <h3>Sign Up</h3>
             <Signup />

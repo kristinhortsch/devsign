@@ -4,11 +4,11 @@ import Home from '../Home';
 import Profile from '../Profile';
 import Login from '../Login';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import '../../css/App.css';
 import 'normalize.css';
 
-library.add(faHome);
+library.add(faHome, faWindowClose);
 
 export default function App() {
   return (

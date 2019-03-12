@@ -6,6 +6,8 @@ const Section = styled.section`
   text-align: center;
   padding: 2px;
   width: 100vw;
+  position: absolute;
+  bottom: 0;
 `;
 export default function Footer() {
   return (

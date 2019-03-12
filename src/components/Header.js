@@ -28,7 +28,7 @@ const Section = styled.section`
   input {
     display: flex;
     position: relative;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 `;
 

@@ -2,24 +2,42 @@ import React, { Fragment } from 'react';
 import Footer from './Footer';
 import SingupModalContainer from '../containers/ModalContainerSignup';
 import { Link } from 'react-router-dom';
-import '../css/App.css';
+import styled from 'styled-components';
 
+const Header = styled.header`
+  display: flex;
+  margin: 10px 0 10px 0;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+
+  h1 {
+      font-size: 3em;
+      font-weight: 100;
+      margin: 10px 10px 0 10px;
+  }
+`;
+
+const Aside = styled.aside`
+  @media only screen and (max-width:600px)  { 
+    display: none;
+  }
+`;
 export default function Login() {
   return (
     <Fragment>
-      <header>
+      <Header>
         <h1>Warble</h1>
-        <img src="../assets/logo.png" width="40px" alt="logo"/>
-      </header>
+        <img src="../assets/logo.png" height="80px" alt="logo"/>
+      </Header>
 
-      <aside>
+      <Aside>
         <h2>JOIN TWITTER</h2>
         <ul>
           <li>Explore</li>
           <li>Connect</li>
           <li>Share</li>
         </ul>
-      </aside>
+      </Aside>
 
       <main>
         <form>
