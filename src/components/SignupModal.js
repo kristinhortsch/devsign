@@ -14,11 +14,15 @@ const Section = styled.section`
   z-index: 1;
   background-color: rgba(178, 178, 187, 0.479);
   .signupModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: white;
-    width: 40%;
+    width: 70%;
     margin: 50% auto;
-    padding: 100px;
-    box-shadow: 2px 2px 5px blue;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #00bfff;
     position: relative;
     .closeButton {
       text-align: right;
@@ -28,6 +32,9 @@ const Section = styled.section`
       margin-bottom: 3%;
       color: red;
     }
+  }
+  h3 {
+    font-weight: 200;
   }
 }
 `;

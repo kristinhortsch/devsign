@@ -22,7 +22,7 @@ const Section = styled.section`
     width: 60%;
     margin: 50% auto;
     padding: 10px;
-    box-shadow: 2px 2px 5px blue;
+    box-shadow: 2px 2px 5px #00bfff;
     position: relative;
     .closeButton {
       text-align: right;

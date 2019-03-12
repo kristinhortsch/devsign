@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Footer from './Footer';
-import SingupModalContainer from '../containers/ModalContainerSignup';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import ModalContainerSignup from '../containers/ModalContainerSignup';
@@ -24,9 +23,10 @@ const Form = styled.form`
   padding-top: 40px;
   input {
     border: 1px solid darkgray;
-    padding: 5px;
+    padding: 8px;
     border-radius: 7px;
     width: 200px;
+    margin-bottom: 25px;
   }
   label {
     margin-bottom: 10px;
