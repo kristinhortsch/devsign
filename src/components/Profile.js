@@ -1,19 +1,47 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ModalContainerChirp from '../containers/ModalContainerChirp';
+import styled from 'styled-components';
 
+const Main = styled.main`
+  .background {
+    height: 100px;
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+  }
+  .prof {
+    height: 100px;
+    margin-top: 50px;
+  }
+  th {
+    font-weight: 200;
+  }
+  table {
+    text-align: center;
+  }
+`;
 export default function DesktopProfile() {
   return (
-    <body>
+    <Fragment>
       <Header />
-      <main>
+      <Main>
         <section>
-          <img src="../assets/background.jpg" alt="background"/>
-          <img src="../assets/prof-pic.png" width="300px" alt="prof pic"/>
-          <p>Chirps: 593</p>
-          <p>Followers: 388</p>
-          <p>Following: 301</p>
+          <img src="../assets/background.jpg" alt="background" className="background"/>
+          <img src="../assets/prof-pic.png" alt="prof pic" className="prof"/>
+          <table>
+            <tr>
+              <th>Chirps</th>
+              <th>Followers</th>
+              <th>Following</th>
+            </tr>
+            <tr>
+              <td>593</td>
+              <td>388</td>
+              <td>301</td>
+            </tr>
+          </table>
         </section>
 
         <aside>
@@ -43,11 +71,11 @@ export default function DesktopProfile() {
             <li>#Trending 5</li>
           </ul>
         </aside>
-      </main>
+      </Main>
 
       <ModalContainerChirp />
-      
+
       <Footer />
-    </body>
+    </Fragment>
   );
 }
