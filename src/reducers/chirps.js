@@ -2,7 +2,7 @@ import { FETCH_POPULAR_CHIRPS, FETCH_USER_CHIRPS, CREATE_CHIRP } from '../action
 
 const initialState = {
   chirps: [],
-  chirp: {}
+  chirp: ''
 };
 
 export default function reducer(state = initialState, action) {
