@@ -9,6 +9,7 @@ import { faHome, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import '../../css/App.css';
 import 'normalize.css';
 import CallbackContainer from '../../containers/CallbackContainer';
+import { withSession } from '../../containers/withSession';
 
 library.add(faHome, faWindowClose);
 
@@ -20,7 +21,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={Login} />
           <Route exact path="/home" component={Home} />
-          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/profile" component={withSession(Profile)} />
           <Route  exact path="/callback" component={CallbackContainer} />
         </Switch>
       </Router>
