@@ -23,6 +23,7 @@ export const handleAuth = () => {
             token: result.idToken,
             id: info.sub,
             handle: info.handle,
+            name: info.name,
             profileImg: info.picture
           });
         });
