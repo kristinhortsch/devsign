@@ -5,72 +5,92 @@ import styled from 'styled-components';
 import 'normalize.css';
 
 const Main = styled.main`
-  .background {
-    height: 100px;
-    z-index: -1;
-    width: 100vw;
-    position: absolute;
-  }
-  .prof {
-    height: 100px;
-    margin-top: 50px;
-  }
-  th {
-    font-weight: 200;
-  }
-  table {    
-    text-align: center;
-  }
-  .section {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-  }
-  h3 {
-    font-weight: 300;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 0.9em;
-  }
-  .info {
-    display: flex;
-  }
-  .name {
-    text-align: center;
-    margin-top: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .description {
-    margin-left: 5px;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 0.8em;
-    text-align: center;
-  }
-  p {
-    padding: 0;
-    margin: 0;
-    font-size: 0.8em;
-  }
-  h2 {
-    font-weight: 300;
-    text-align: center;
-    margin-top: 5px;
-  }
-  ul {
-    padding: 0;
-  }
-  li {
-    list-style-type: none;
-    border: 1px solid lightgray;
-    margin: 15px 15px;
-    padding: 10px;
-  }
- 
+.background {
+  height: 200px;
+  z-index: -1;
+  width: 100vw;
+  position: absolute;
+}
+.prof {
+  height: 400px;
+  margin-top: 50px;
+}
+th {
+  font-weight: 200;
+}
+table {    
+  text-align: center;
+}
+.section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
   @media only screen and (max-width:600px)  { 
     .trending {
       display: none;
+    }
+    .background {
+      height: 100px;
+      z-index: -1;
+      width: 100vw;
+      position: absolute;
+    }
+    .prof {
+      height: 100px;
+      margin-top: 50px;
+    }
+    th {
+      font-weight: 200;
+    }
+    table {    
+      text-align: center;
+    }
+    .section {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+    }
+    h3 {
+      font-weight: 300;
+      margin-bottom: 0;
+      margin-top: 0;
+      font-size: 0.9em;
+    }
+    .info {
+      display: flex;
+    }
+    .name {
+      text-align: center;
+      margin-top: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .description {
+      margin-left: 5px;
+      margin-top: 10px;
+      margin-right: 10px;
+      font-size: 0.8em;
+      text-align: center;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 0.8em;
+    }
+    h2 {
+      font-weight: 300;
+      text-align: center;
+      margin-top: 5px;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+      border: 1px solid lightgray;
+      margin: 15px 15px;
+      padding: 10px;
     }
   }
 `;

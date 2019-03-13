@@ -10,7 +10,13 @@ const Section = styled.section`
   img { 
     width: 40px;
   }
+  button {
+    border: none;
+    background: white;
+  }
 `;
+
+
 export const withModalContainer = Component => {
   class WithModalContainer extends React.PureComponent {
     static propTypes = {
