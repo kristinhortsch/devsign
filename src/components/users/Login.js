@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import ModalContainerSignup from '../../containers/ModalContainerSignup';
+import { login } from '../../services/auth';
 
 const Header = styled.header`
   display: flex;
@@ -61,6 +62,7 @@ const Aside = styled.aside`
   }
 `;
 export default function Login() {
+  login();
   return (
     <Fragment>
       <Header>

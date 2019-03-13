@@ -4,6 +4,7 @@ import Trending from '../chirps/Trending';
 import ChirpsContainer from '../../containers/ChirpsContainer';
 import MiniProfile from '../users/MiniProfile';
 import styled from 'styled-components';
+import { login } from '../../services/auth';
 
 const Div1 = styled.div`
   @media only screen and (max-width:600px)  { 
