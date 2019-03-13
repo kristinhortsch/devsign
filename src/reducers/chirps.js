@@ -1,21 +1,20 @@
-import { SHOW_MODAL, HIDE_MODAL } from '../actions/modal';
+import { FETCH_POPULAR_CHIRPS, FETCH_USER_CHIRPS } from '../actions/chirps';
 
 const initialState = {
-  isOpen: false
+  chirps: []
 };
 
 export default function reducer(state = initialState, action) {
   switch(action.type) {
-    case SHOW_MODAL:
+    case FETCH_POPULAR_CHIRPS: 
       return {
         ...state,
-        isOpen: true
+        chirps: action.payload
       };
-    
-    case HIDE_MODAL:
+    case FETCH_USER_CHIRPS: 
       return {
         ...state,
-        isOpen: false
+        chirps: action.payload
       };
     default: 
       return state;
