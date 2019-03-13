@@ -24,10 +24,22 @@ const Section = styled.section`
     font-size: 2em;
     color: black;
   }
-  input {
+  label {
     display: flex;
+    flex-direction: column;
+    margin: -2px 0 10px 0;
     position: relative;
-    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  input {
+    margin-left: 10px;
+    padding: 8px;
+  }
+  span {
+    color: white;
+    font-size: 1px;
   }
 `;
 
@@ -37,13 +49,13 @@ export default function Header() {
       <header>
         <h1 className="warble">Warble</h1>
         <nav className="nav">
-          <Link to="/home">
-            <FontAwesomeIcon icon="home" className="home"/>
+          <Link to="/home" name="home"><span>Home</span>
+            <FontAwesomeIcon icon="home" className="home" alt="home link"/>
           </Link>
           <ModalContainerChirp />
-          <Link to="/profile"><img src="../assets/prof-pic.png" width="40px" alt="prof pic logo"/></Link>
+          <Link to="/profile" name="profile"><img src="../assets/prof-pic.png" width="40px" alt="prof pic link"/><span>Profile</span></Link>
         </nav>
-        <input type="text" placeholder="Search" name="search" />
+        <label>Search:<input type="text" name="search" /></label>
       </header>
     </Section>
   );

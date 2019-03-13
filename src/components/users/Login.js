@@ -79,13 +79,15 @@ export default function Login() {
 
       <Main>
         <Form>
-          <label>Username</label>
-          <input type="text" name="username" />
+          <label>Username
+            <input type="text" name="username" />
+          </label>
           
-          <label>Password</label>
-          <input type="text" name="password" />
+          <label>Password
+            <input type="text" name="password" />
+          </label>
           
-          <Link to='/home'><button type="submit">Login</button></Link>
+          <Link to='/home' name='home'><button type="submit">Login</button></Link>
         </Form>
         
         <Wrapper>

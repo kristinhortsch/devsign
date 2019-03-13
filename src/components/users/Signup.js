@@ -24,17 +24,21 @@ const Form = styled.form`
 export default function Signup() {
   return (
     <Form >
-      <label>Name</label>
-      <input type="text" name="name"/>
+      <label>Name
+        <input type="text" name="name"/>
+      </label>
 
-      <label>Email</label>
-      <input type="text" name="email" />
+      <label>Email
+        <input type="text" name="email" />
+      </label>
 
-      <label>Username</label>
-      <input type="text" name="username"/>
+      <label>Username
+        <input type="text" name="username"/>
+      </label>
 
-      <label>Password</label>
-      <input type="password" name="password"/>
+      <label>Password
+        <input type="password" name="password"/>
+      </label>
 
       <button type="submit">Signup</button>
     </Form>

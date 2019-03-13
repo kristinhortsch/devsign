@@ -23,6 +23,12 @@ const Wrapper = styled.section`
   textarea {
     border: 1px solid black;
   }
+  label {
+    color: white;
+  }
+  span {
+    font-size: 1px;
+  }
 `;
 
 export default function NewChirp() {
@@ -30,8 +36,10 @@ export default function NewChirp() {
     <Wrapper>
       <div className="body">
         <img src='../assets/prof-pic.png' height="40px" alt="prof pic"/>
-        <form >
-          <textarea name="chirp"></textarea>
+        <form>
+          <label><span>Post</span>
+            <textarea name="chirp"></textarea>
+          </label>
         </form>
       </div>
       <button type="submit">Chirp!</button>
