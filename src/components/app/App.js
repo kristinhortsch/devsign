@@ -3,16 +3,21 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Profile from '../users/Profile';
 import Login from '../users/Login';
+import Footer from './Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHome, faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
 import '../../css/App.css';
 import 'normalize.css';
 
 library.add(faHome, faWindowClose);
 
+
+
 export default function App() {
   return (
     <Fragment>
+      
       <Router>
         <Switch>
           <Route exact path="/" component={Login} />
@@ -20,6 +25,9 @@ export default function App() {
           <Route exact path="/profile" component={Profile} />
         </Switch>
       </Router>
+    
+
+      <Footer />
     </Fragment>
   );
 }

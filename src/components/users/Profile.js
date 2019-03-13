@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Header from '../app/Header';
-import Footer from '../app/Footer';
 import Chirp from '../chirps/Chirp';
 import styled from 'styled-components';
 import 'normalize.css';
@@ -137,8 +136,6 @@ export default function DesktopProfile() {
           </ul>
         </aside>
       </Main>
-
-      <Footer />
     </Fragment>
   );
 }

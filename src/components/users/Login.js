@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Footer from '../app/Footer';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import ModalContainerSignup from '../../containers/ModalContainerSignup';
@@ -30,6 +29,7 @@ const Form = styled.form`
   }
   label {
     margin-bottom: 10px;
+    text-align: center;
   }
   button {
     background: #00bfff;
@@ -79,11 +79,11 @@ export default function Login() {
 
       <Main>
         <Form>
-          <label>Username
+          <label>Username<br/><br/>
             <input type="text" name="username" />
           </label>
           
-          <label>Password
+          <label>Password<br/><br/>
             <input type="text" name="password" />
           </label>
           
@@ -96,8 +96,6 @@ export default function Login() {
         </Wrapper>
 
       </Main>
-
-      <Footer />
     </Fragment>
   );
 }
