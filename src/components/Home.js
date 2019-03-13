@@ -5,16 +5,26 @@ import Trending from './Trending';
 import PopularChirps from './PopularChirps';
 import MiniProfile from './MiniProfile';
 import ModalContainerChirp from '../containers/ModalContainerChirp';
-import '../css/App.css';
+import styled from 'styled-components';
+
+const Div = styled.div`
+  @media only screen and (max-width:600px)  { 
+    display: none;
+  }
+`;
 
 export default function DesktopHome() {
   return (
     <body>
       <Header />
 
-      <MiniProfile />
+      <Div>
+        <MiniProfile />
+      </Div>
 
-      <Trending />
+      <Div>
+        <Trending />
+      </Div>
 
       <PopularChirps />
 

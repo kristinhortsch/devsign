@@ -16,8 +16,7 @@ const Section = styled.section`
     justify-content: space-between;
     align-items: center;
     margin-top: 0;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding: 5px 15px 0px 15px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
   }

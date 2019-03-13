@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Chirp from './Chirp';
-import ModalContainerChirp from '../containers/ModalContainerChirp';
 import styled from 'styled-components';
 import 'normalize.css';
+
 const Main = styled.main`
   .background {
     height: 100px;
@@ -129,8 +129,6 @@ export default function DesktopProfile() {
           </ul>
         </aside>
       </Main>
-
-      <ModalContainerChirp />
 
       <Footer />
     </Fragment>

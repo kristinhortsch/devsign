@@ -12,8 +12,11 @@ const Wrapper = styled.section`
     display: flex;
   }
   button {
-    border: 1px solid darkgray;
-    border-radius: 5px;
+    background: #00bfff;
+    color: white;
+    padding: 8px;
+    border-radius: 7px;
+    border: 1 px solid darkgray;
     width: 50%;
     margin-top: 10px;
   }
