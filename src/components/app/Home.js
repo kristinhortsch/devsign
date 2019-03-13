@@ -9,8 +9,8 @@ const Div1 = styled.div`
   @media only screen and (max-width:600px)  { 
     display: none;
   }
-  width: 30%;
-  margin-left: 20px;
+  width: 20%;
+  margin-left: 80px;
   margin-right: 20px;
 `;
 
@@ -20,7 +20,7 @@ const Div2 = styled.div`
   }
   @media only screen and (min-width:601px)  { 
     width: 65%;
-    margin-right: 20px;
+    margin-right: 80px;
   }
   
 `;

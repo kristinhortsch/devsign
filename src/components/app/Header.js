@@ -36,6 +36,8 @@ const Section = styled.section`
   input {
     margin-left: 10px;
     padding: 8px;
+    border: 1px solid #00bfff;
+    box-shadow: 1px 1px 5px #00bfff;
   }
   span {
     color: white;
@@ -55,7 +57,7 @@ export default function Header() {
           <ModalContainerChirp />
           <Link to="/profile" name="profile"><img src="../assets/prof-pic.png" width="40px" alt="prof pic link"/><span>Profile</span></Link>
         </nav>
-        <label>Search:<input type="text" name="search" /></label>
+        <label>Search:<input type="text" name="search" placeholder="Search" /></label>
       </header>
     </Section>
   );

@@ -16,6 +16,12 @@ const Main = styled.main`
     margin: 15px 15px;
     padding: 10px;
   }
+
+  @media only screen and (min-width:601px)  { 
+    li {
+      width: 90%;
+    }
+  }
 `;
 export default function PopularChirps() {
   return (
