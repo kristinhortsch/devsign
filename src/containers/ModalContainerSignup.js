@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import SignupModal from '../components/SignupModal';
+import SignupModal from '../components/users/SignupModal';
 import { showModal, hideModal } from '../actions/modal';
 import { isOpen } from '../selectors/modal';
 import styled from 'styled-components';

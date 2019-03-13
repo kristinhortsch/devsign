@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import MiniProfile from '../MiniProfile';
+import MiniProfile from '../users/MiniProfile';
 
 describe('MiniProfile', () => {
   it('matches a snapshot', () => {

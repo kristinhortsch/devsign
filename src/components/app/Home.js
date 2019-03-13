@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Trending from './Trending';
-import PopularChirps from './PopularChirps';
-import MiniProfile from './MiniProfile';
+import Trending from '../chirps/Trending';
+import PopularChirps from '../chirps/PopularChirps';
+import MiniProfile from '../users/MiniProfile';
 import styled from 'styled-components';
 
 const Div = styled.div`

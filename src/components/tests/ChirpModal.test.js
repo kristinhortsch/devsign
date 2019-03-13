@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ChirpModal from '../ChirpModal';
+import ChirpModal from '../chirps/ChirpModal';
 
 describe('ChirpModal', () => {
   it('matches a snapshot', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Trending from '../Trending';
+import Trending from '../chirps/Trending';
 
 describe('Trending', () => {
   it('matches a snapshot', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import NewChirp from '../NewChirp';
+import NewChirp from '../chirps/NewChirp';
 
 describe('NewChirp', () => {
   it('matches a snapshot', () => {

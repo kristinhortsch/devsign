@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ModalContainerChirp from '../containers/ModalContainerChirp';
+import ModalContainerChirp from '../../containers/ModalContainerChirp';
 import styled from 'styled-components';
 
 const Section = styled.section`

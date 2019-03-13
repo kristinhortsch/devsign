@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Chirp from './Chirp';
+import Header from '../app/Header';
+import Footer from '../app/Footer';
+import Chirp from '../chirps/Chirp';
 import styled from 'styled-components';
 import 'normalize.css';
 
@@ -31,7 +31,7 @@ const Main = styled.main`
     font-weight: 300;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
   .info {
     display: flex;
@@ -43,12 +43,16 @@ const Main = styled.main`
     margin-right: 10px;
   }
   .description {
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 0.8em;
+    text-align: center;
   }
   p {
     padding: 0;
     margin: 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   h2 {
     font-weight: 300;
@@ -101,7 +105,7 @@ export default function DesktopProfile() {
             <p>@kristinhortsch</p>
           </div>
           <div className="description">
-            <p>Description</p>
+            <p>Lover of the laughing, sports, and all things coding.</p>
           </div>
         </section>
 

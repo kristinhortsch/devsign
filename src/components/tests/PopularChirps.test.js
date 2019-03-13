@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import PopularChirps from '../PopularChirps';
+import PopularChirps from '../chirps/PopularChirps';
 
 describe('PopularChirps', () => {
   it('matches a snapshot', () => {

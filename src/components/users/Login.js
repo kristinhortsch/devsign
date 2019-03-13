@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import Footer from './Footer';
+import Footer from '../app/Footer';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import ModalContainerSignup from '../containers/ModalContainerSignup';
+import ModalContainerSignup from '../../containers/ModalContainerSignup';
 
 const Header = styled.header`
   display: flex;
