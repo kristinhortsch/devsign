@@ -1,25 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Trending matches a snapshot 1`] = `
-<aside>
+<aside
+  className="sc-htpNat ekDwxA"
+>
   <h3>
     Trending
   </h3>
-  <ul>
-    <li>
-      #Trending 1
+  <ul
+    className="sc-bwzfXH qSXGG"
+  >
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #Bro
     </li>
-    <li>
-      #Trending 2
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #Blessed
     </li>
-    <li>
-      #Trending 3
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #NoFilter
     </li>
-    <li>
-      #Trending 4
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #HumbleBrag
     </li>
-    <li>
-      #Trending 5
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #JustSaying
+    </li>
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #NationalWineDay
+    </li>
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #RipCity
+    </li>
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #WCW
+    </li>
+    <li
+      className="sc-bdVaJa BwNPC"
+    >
+      #MCM
     </li>
   </ul>
 </aside>

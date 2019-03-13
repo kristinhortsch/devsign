@@ -2,7 +2,7 @@
 
 exports[`NewChirp matches a snapshot 1`] = `
 <section
-  className="sc-bdVaJa gEePkz"
+  className="sc-bdVaJa bUPIVd"
 >
   <div
     className="body"
@@ -13,9 +13,14 @@ exports[`NewChirp matches a snapshot 1`] = `
       src="../assets/prof-pic.png"
     />
     <form>
-      <textarea
-        name="chirp"
-      />
+      <label>
+        <span>
+          Post
+        </span>
+        <textarea
+          name="chirp"
+        />
+      </label>
     </form>
   </div>
   <button

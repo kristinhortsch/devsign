@@ -2,7 +2,7 @@
 
 exports[`PopularChirps matches a snapshot 1`] = `
 <main
-  className="sc-bwzfXH cweYKB"
+  className="sc-bwzfXH iqEjDz"
 >
   <h2>
     Popular Chirps
@@ -10,7 +10,7 @@ exports[`PopularChirps matches a snapshot 1`] = `
   <ul>
     <li>
       <section
-        className="sc-bdVaJa fUZEIA"
+        className="sc-bdVaJa gyTtzj"
       >
         <img
           alt="prof-pic"
@@ -20,7 +20,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
         <div
           className="info"
         >
-          <h4>
+          <h4
+            className="name"
+          >
             UserName
           </h4>
           <p
@@ -28,7 +30,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
           >
             @userhandle
           </p>
-          <p>
+          <p
+            className="body"
+          >
             My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
           </p>
         </div>
@@ -36,7 +40,7 @@ exports[`PopularChirps matches a snapshot 1`] = `
     </li>
     <li>
       <section
-        className="sc-bdVaJa fUZEIA"
+        className="sc-bdVaJa gyTtzj"
       >
         <img
           alt="prof-pic"
@@ -46,7 +50,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
         <div
           className="info"
         >
-          <h4>
+          <h4
+            className="name"
+          >
             UserName
           </h4>
           <p
@@ -54,7 +60,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
           >
             @userhandle
           </p>
-          <p>
+          <p
+            className="body"
+          >
             My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
           </p>
         </div>
@@ -62,7 +70,7 @@ exports[`PopularChirps matches a snapshot 1`] = `
     </li>
     <li>
       <section
-        className="sc-bdVaJa fUZEIA"
+        className="sc-bdVaJa gyTtzj"
       >
         <img
           alt="prof-pic"
@@ -72,7 +80,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
         <div
           className="info"
         >
-          <h4>
+          <h4
+            className="name"
+          >
             UserName
           </h4>
           <p
@@ -80,7 +90,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
           >
             @userhandle
           </p>
-          <p>
+          <p
+            className="body"
+          >
             My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
           </p>
         </div>
@@ -88,7 +100,7 @@ exports[`PopularChirps matches a snapshot 1`] = `
     </li>
     <li>
       <section
-        className="sc-bdVaJa fUZEIA"
+        className="sc-bdVaJa gyTtzj"
       >
         <img
           alt="prof-pic"
@@ -98,7 +110,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
         <div
           className="info"
         >
-          <h4>
+          <h4
+            className="name"
+          >
             UserName
           </h4>
           <p
@@ -106,7 +120,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
           >
             @userhandle
           </p>
-          <p>
+          <p
+            className="body"
+          >
             My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
           </p>
         </div>
@@ -114,7 +130,7 @@ exports[`PopularChirps matches a snapshot 1`] = `
     </li>
     <li>
       <section
-        className="sc-bdVaJa fUZEIA"
+        className="sc-bdVaJa gyTtzj"
       >
         <img
           alt="prof-pic"
@@ -124,7 +140,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
         <div
           className="info"
         >
-          <h4>
+          <h4
+            className="name"
+          >
             UserName
           </h4>
           <p
@@ -132,7 +150,9 @@ exports[`PopularChirps matches a snapshot 1`] = `
           >
             @userhandle
           </p>
-          <p>
+          <p
+            className="body"
+          >
             My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
           </p>
         </div>

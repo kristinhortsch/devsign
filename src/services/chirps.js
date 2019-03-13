@@ -7,7 +7,7 @@ export const getPopularChirps = () => {
   ]);
 };
 
-export const getUsersChirps = () => {
+export const getUserChirps = () => {
   return Promise.resolve([
     { id: 1234, chirp: 'life is great', handle: 'user1', profileImg: '../../assets/prof-pic.png' },
     { id: 1234, chirp: 'life is great', handle: 'user1', profileImg: '../../assets/prof-pic.png' },

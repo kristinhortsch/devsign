@@ -1,21 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MiniProfile matches a snapshot 1`] = `
-<aside>
+<aside
+  className="sc-bdVaJa qjbAC"
+>
   <img
-    alt="prof pic"
-    src="../assets/prof-pic.png"
-    width="30px"
+    alt="background"
+    className="background"
+    src="../assets/background.jpg"
   />
-  <h3>
-    User Name
-  </h3>
-  <hr />
-  <p>
-    Chirps: 593
-  </p>
-  <p>
-    Followers: 388
-  </p>
+  <div
+    className="main"
+  >
+    <img
+      alt="prof pic"
+      className="profpic"
+      src="../assets/prof-pic.png"
+    />
+    <div
+      className="header"
+    >
+      <h3>
+        Kristin Hortsch
+      </h3>
+      <p>
+        @kristinhortsch
+      </p>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Chirps
+        </th>
+        <th>
+          Followers
+        </th>
+        <th>
+          Following
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          593
+        </td>
+        <td>
+          388
+        </td>
+        <td>
+          301
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </aside>
 `;
