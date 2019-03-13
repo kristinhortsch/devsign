@@ -1,16 +1,10 @@
-import { getPopularChirps, getUserChirps } from '../services/chirps';
-export const FETCH_POPULAR_CHIRPS = 'FETCH_POPULAR_CHIRPS';
-export const FETCH_USER_CHIRPS = 'FETCH_POPULAR_CHIRPS';
+import { getChirps } from '../services/chirps';
+
+export const FETCH_CHIRPS = 'FETCH_CHIRPS';
 export const FETCH_CHIRPS_LOADING = 'FETCH_CHIRPS_LOADING';
-
-export const fetchPopularChirps = () => ({
-  type: FETCH_POPULAR_CHIRPS,
-  payload: getPopularChirps()
-});
-
-export const fetchUserTweets = () => ({
-  type: FETCH_USER_CHIRPS,
-  payload: getUserChirps()
+export const fetchChirps = () => ({
+  type: FETCH_CHIRPS,
+  payload: getChirps()
 });
 
 export const CREATE_CHIRP = 'CREATE_CHIRP';

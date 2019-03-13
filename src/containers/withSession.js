@@ -18,7 +18,6 @@ export const withSession = Component => {
 
     render() {
       if(!this.props.token) return <h1>Not Logged In</h1>;
-
       return <Component {...this.props } />;
     }
   }

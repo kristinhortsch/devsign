@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import { fetchPopularChirps } from '../actions/chirps';
+import { fetchChirps } from '../actions/chirps';
 import PropTypes from 'prop-types';
 import PopularChirps from '../components/chirps/PopularChirps';
 import { getChirps } from '../selectors/chirps';
 
-class ChirpsContainer extends PureComponent {
+class PopularChirpsContainer extends PureComponent {
   static propTypes = {
     chirps: PropTypes.array,
     fetchPopular: PropTypes.func
@@ -27,11 +27,11 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchPopular() {
-    dispatch(fetchPopularChirps());
+    dispatch(fetchChirps());
   }
 });
 
 export default connect(
   mapStateToProps, 
   mapDispatchToProps
-)(ChirpsContainer);
+)(PopularChirpsContainer);
