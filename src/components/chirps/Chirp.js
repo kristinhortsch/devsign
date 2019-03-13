@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Section = styled.section` 
   margin-top: 0;
@@ -24,15 +25,21 @@ const Section = styled.section`
   }
   
 `;
-export default function Chirp() {
+export default function Chirp({ chirp, handle, profileImg }) {
   return (
     <Section>
-      <img src="../../assets/prof-pic.png" alt="prof-pic" height="40px"/>
+      <img src={profileImg} alt="prof-pic" height="40px"/>
       <div className="info">
         <h4 className="name">UserName</h4>
-        <p className="handle">@userhandle</p>
-        <p className="body">My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet</p>
+        <p className="handle">{handle}</p>
+        <p className="body">{chirp}</p>
       </div>
     </Section>
   );
 }
+
+Chirp.propTypes = {
+  chirp: PropTypes.string,
+  handle: PropTypes.string,
+  profileImg: PropTypes.string
+};

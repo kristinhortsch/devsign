@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Chirp from './Chirp';
 import styled from 'styled-components';
 
@@ -23,17 +24,21 @@ const Main = styled.main`
     }
   }
 `;
-export default function PopularChirps() {
+export default function PopularChirps({ chirps }) {
+  console.log(chirps);
+  const listOfChirps = chirps.map(chirp => {
+    return <li key={chirp.id}><Chirp chirp={chirp.chirp} handle={chirp.handle} /></li>;
+  });
   return (
     <Main>
       <h2>Popular Chirps</h2>
       <ul>
-        <li><Chirp /></li>
-        <li><Chirp /></li>
-        <li><Chirp /></li>
-        <li><Chirp /></li>
-        <li><Chirp /></li>
+        {listOfChirps}
       </ul>
     </Main>
   );
 }
+
+PopularChirps.propTypes = {
+  chirps: PropTypes.array
+};

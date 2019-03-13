@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
 import Trending from '../chirps/Trending';
-import PopularChirps from '../chirps/PopularChirps';
+import ChirpsContainer from '../../containers/ChirpsContainer';
 import MiniProfile from '../users/MiniProfile';
 import styled from 'styled-components';
 
@@ -41,7 +41,7 @@ export default function DesktopHome() {
           <Trending />
         </Div1>
         <Div2>
-          <PopularChirps />
+          <ChirpsContainer />
         </Div2>
       </Section>
     </Fragment>
