@@ -11,6 +11,7 @@ const Section = styled.section`
   .info {
     display: flex;
     flex-direction: column;
+    width: 100%;
    
   }
   .body {
@@ -20,11 +21,8 @@ const Section = styled.section`
   }
   .handle {
     margin: 0 0 10px 0;
-    width: 55%;
   }
-  .name {
-    width: 55vw;
-  }
+  
 `;
 export default function Chirp() {
   return (

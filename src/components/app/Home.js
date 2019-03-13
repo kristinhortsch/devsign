@@ -9,7 +9,7 @@ const Div1 = styled.div`
   @media only screen and (max-width:600px)  { 
     display: none;
   }
-  width: 20%;
+  width: 22%;
   margin-left: 80px;
   margin-right: 20px;
 `;
@@ -19,10 +19,9 @@ const Div2 = styled.div`
     width: auto;
   }
   @media only screen and (min-width:601px)  { 
-    width: 65%;
+    width: 60%;
     margin-right: 80px;
   }
-  
 `;
 
 const Section = styled.section`
