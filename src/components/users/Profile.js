@@ -85,16 +85,20 @@ export default function DesktopProfile() {
           <div className="section">
             <img src="../assets/prof-pic.png" alt="prof pic" className="prof"/>
             <table>
-              <tr>
-                <th>Chirps</th>
-                <th>Followers</th>
-                <th>Following</th>
-              </tr>
-              <tr>
-                <td>593</td>
-                <td>388</td>
-                <td>301</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Chirps</th>
+                  <th>Followers</th>
+                  <th>Following</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>593</td>
+                  <td>388</td>
+                  <td>301</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </section>
