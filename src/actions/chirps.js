@@ -13,4 +13,9 @@ export const fetchUserTweets = () => ({
   payload: getUserChirps()
 });
 
+export const CREATE_CHIRP = 'CREATE_CHIRP';
+export const createChirp = chirp => ({
+  type: CREATE_CHIRP,
+  payload: chirp
+});
 

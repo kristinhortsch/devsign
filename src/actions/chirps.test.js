@@ -1,7 +1,4 @@
-import { FETCH_POPULAR_CHIRPS, fetchPopularChirps } from './chirps';
-// import { getPopularChirps } from '../services/blogService';
-
-// jest.mock('../services/blogService');
+import { FETCH_POPULAR_CHIRPS, fetchPopularChirps, CREATE_CHIRP, createChirp } from './chirps';
 
 describe('actions test', () => {
   it('fetches chirps', () => {
@@ -10,6 +7,16 @@ describe('actions test', () => {
     expect(action).toEqual({ 
       type: FETCH_POPULAR_CHIRPS,
       payload: Promise.resolve()
+    });
+  });
+
+  it('creates a chirp', () => {
+    const chirp = 'hello there';
+    const action = createChirp(chirp);
+
+    expect(action).toEqual({
+      type: CREATE_CHIRP,
+      payload: 'hello there'
     });
   });
 });
