@@ -10,12 +10,11 @@ exports[`PopularChirps matches a snapshot 1`] = `
   <ul>
     <li>
       <section
-        className="sc-bdVaJa gyTtzj"
+        className="sc-bdVaJa jaDQod"
       >
         <img
           alt="prof-pic"
           height="40px"
-          src="../../assets/prof-pic.png"
         />
         <div
           className="info"
@@ -27,133 +26,11 @@ exports[`PopularChirps matches a snapshot 1`] = `
           </h4>
           <p
             className="handle"
-          >
-            @userhandle
-          </p>
+          />
           <p
             className="body"
           >
-            My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
-          </p>
-        </div>
-      </section>
-    </li>
-    <li>
-      <section
-        className="sc-bdVaJa gyTtzj"
-      >
-        <img
-          alt="prof-pic"
-          height="40px"
-          src="../../assets/prof-pic.png"
-        />
-        <div
-          className="info"
-        >
-          <h4
-            className="name"
-          >
-            UserName
-          </h4>
-          <p
-            className="handle"
-          >
-            @userhandle
-          </p>
-          <p
-            className="body"
-          >
-            My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
-          </p>
-        </div>
-      </section>
-    </li>
-    <li>
-      <section
-        className="sc-bdVaJa gyTtzj"
-      >
-        <img
-          alt="prof-pic"
-          height="40px"
-          src="../../assets/prof-pic.png"
-        />
-        <div
-          className="info"
-        >
-          <h4
-            className="name"
-          >
-            UserName
-          </h4>
-          <p
-            className="handle"
-          >
-            @userhandle
-          </p>
-          <p
-            className="body"
-          >
-            My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
-          </p>
-        </div>
-      </section>
-    </li>
-    <li>
-      <section
-        className="sc-bdVaJa gyTtzj"
-      >
-        <img
-          alt="prof-pic"
-          height="40px"
-          src="../../assets/prof-pic.png"
-        />
-        <div
-          className="info"
-        >
-          <h4
-            className="name"
-          >
-            UserName
-          </h4>
-          <p
-            className="handle"
-          >
-            @userhandle
-          </p>
-          <p
-            className="body"
-          >
-            My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
-          </p>
-        </div>
-      </section>
-    </li>
-    <li>
-      <section
-        className="sc-bdVaJa gyTtzj"
-      >
-        <img
-          alt="prof-pic"
-          height="40px"
-          src="../../assets/prof-pic.png"
-        />
-        <div
-          className="info"
-        >
-          <h4
-            className="name"
-          >
-            UserName
-          </h4>
-          <p
-            className="handle"
-          >
-            @userhandle
-          </p>
-          <p
-            className="body"
-          >
-            My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
+            hi
           </p>
         </div>
       </section>

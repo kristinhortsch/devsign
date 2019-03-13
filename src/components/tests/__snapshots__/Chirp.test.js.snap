@@ -2,12 +2,11 @@
 
 exports[`Chirp matches a snapshot 1`] = `
 <section
-  className="sc-bdVaJa gyTtzj"
+  className="sc-bdVaJa jaDQod"
 >
   <img
     alt="prof-pic"
     height="40px"
-    src="../../assets/prof-pic.png"
   />
   <div
     className="info"
@@ -19,14 +18,10 @@ exports[`Chirp matches a snapshot 1`] = `
     </h4>
     <p
       className="handle"
-    >
-      @userhandle
-    </p>
+    />
     <p
       className="body"
-    >
-      My name is somewhat extravagant, and I want to cut back. Its the good costumes, all year long. #mybite #randomtweet
-    </p>
+    />
   </div>
 </section>
 `;

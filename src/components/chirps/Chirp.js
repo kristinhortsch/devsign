@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
+ 
 const Section = styled.section` 
   margin-top: 0;
   display: flex;
@@ -13,7 +13,6 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     width: 100%;
-   
   }
   .body {
   }
@@ -23,7 +22,6 @@ const Section = styled.section`
   .handle {
     margin: 0 0 10px 0;
   }
-  
 `;
 export default function Chirp({ chirp, handle, profileImg }) {
   return (

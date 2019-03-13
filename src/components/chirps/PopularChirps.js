@@ -25,9 +25,8 @@ const Main = styled.main`
   }
 `;
 export default function PopularChirps({ chirps }) {
-  console.log(chirps);
-  const listOfChirps = chirps.map(chirp => {
-    return <li key={chirp.id}><Chirp chirp={chirp.chirp} handle={chirp.handle} profileImg={chirp.profileImg} /></li>;
+  const listOfChirps = chirps.map((chirp, i) => {
+    return <li key={i}><Chirp chirp={chirp.chirp} handle={chirp.handle} profileImg={chirp.profileImg} /></li>;
   });
   return (
     <Main>
