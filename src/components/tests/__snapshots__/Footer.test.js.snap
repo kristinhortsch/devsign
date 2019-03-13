@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matches a snapshot 1`] = `
+<section
+  className="sc-bdVaJa jzDroI"
+>
+  <footer>
+    <p>
+      © Warble | 2019 
+    </p>
+  </footer>
+</section>
+`;

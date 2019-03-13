@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Footer from './Footer';
+import MiniProfile from '../MiniProfile';
 
-describe('Footer', () => {
+describe('MiniProfile', () => {
   it('matches a snapshot', () => {
     const tree = renderer.create(
-      <Footer />
+      <MiniProfile />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

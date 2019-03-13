@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Trending from './Trending';
+import Chirp from '../Chirp';
 
-describe('Trending', () => {
+describe('Chirp', () => {
   it('matches a snapshot', () => {
     const tree = renderer.create(
-      <Trending />
+      <Chirp />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

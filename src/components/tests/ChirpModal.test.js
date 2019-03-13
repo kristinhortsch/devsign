@@ -1,11 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import MiniProfile from './MiniProfile';
+import ChirpModal from '../ChirpModal';
 
-describe('MiniProfile', () => {
+describe('ChirpModal', () => {
   it('matches a snapshot', () => {
+    const onClose = jest.fn();
+    const show = false;
     const tree = renderer.create(
-      <MiniProfile />
+      <ChirpModal onClose={onClose} show={show}/>
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

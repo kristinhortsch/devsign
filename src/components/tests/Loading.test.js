@@ -1,13 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ChirpModal from './ChirpModal';
+import Loading from '../Loading';
 
-describe('ChirpModal', () => {
+describe('Loading', () => {
   it('matches a snapshot', () => {
-    const onClose = jest.fn();
-    const show = false;
     const tree = renderer.create(
-      <ChirpModal onClose={onClose} show={show}/>
+      <Loading />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

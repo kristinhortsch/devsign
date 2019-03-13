@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Chirp from './Chirp';
+import Footer from '../Footer';
 
-describe('Chirp', () => {
+describe('Footer', () => {
   it('matches a snapshot', () => {
     const tree = renderer.create(
-      <Chirp />
+      <Footer />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

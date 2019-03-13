@@ -4,7 +4,6 @@ import Footer from './Footer';
 import Trending from './Trending';
 import PopularChirps from './PopularChirps';
 import MiniProfile from './MiniProfile';
-import ModalContainerChirp from '../containers/ModalContainerChirp';
 import styled from 'styled-components';
 
 const Div = styled.div`
@@ -27,8 +26,6 @@ export default function DesktopHome() {
       </Div>
 
       <PopularChirps />
-
-      <ModalContainerChirp />
 
       <Footer />
     </body>
