@@ -4,53 +4,57 @@ import Trending from '../chirps/Trending';
 import UserChirpsContainer from '../../containers/UserChirpsContainer';
 import styled from 'styled-components';
 import 'normalize.css';
+import MiniProfile from './MiniProfile';
 
 const Main = styled.main`
-  h3 {
-    font-weight: 600;
-    margin: 0;
+  @media only screen and (min-width:600px)  { 
+    h3 {
+      font-weight: 600;
+      margin: 0;
+    }
+    .handle {
+      margin: 0;
+      font-size: 0.8em;
+    }
+    .description {
+      font-size: 0.8em;
+    }
+    .background {
+      height: 250px;
+      z-index: -1;
+      width: 100vw;
+      position: absolute;
+      margin-bottom: 0;
+      padding: 0;
+    }
+    .prof {
+      height: 200px;
+      margin-top: 130px;
+      margin-left: 80px;
+    }
+    th {
+      font-weight: 200;
+    }
+    table { 
+      text-align: center;
+      margin-right: 80px;
+      margin-bottom: 30px;
+      background: white;
+      width: 60%;
+      border-bottom: 2px solid black;
+      height: 50px;
+    }
+    .section {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+    }
+    .sideprof {
+      border: 1px solid gray;
+      padding: 10px;
+    }  
   }
-  .handle {
-    margin: 0;
-    font-size: 0.8em;
-  }
-  .description {
-    font-size: 0.8em;
-  }
-  .background {
-    height: 250px;
-    z-index: -1;
-    width: 100vw;
-    position: absolute;
-    margin-bottom: 0;
-    padding: 0;
-  }
-  .prof {
-    height: 200px;
-    margin-top: 130px;
-    margin-left: 80px;
-  }
-  th {
-    font-weight: 200;
-  }
-  table { 
-    text-align: center;
-    margin-right: 80px;
-    margin-bottom: 30px;
-    background: white;
-    width: 60%;
-    border-bottom: 2px solid black;
-    height: 50px;
-  }
-  .section {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-  }
-  .sideprof {
-    border: 1px solid gray;
-    padding: 10px;
-  }
+ 
   @media only screen and (max-width:600px)  { 
     .background {
       height: 100px;
@@ -59,13 +63,14 @@ const Main = styled.main`
       position: absolute;
     }
     .prof {
-      height: 100px;
-      margin-top: 50px;
+      height: 80px;
+      margin-top: 60px;
     }
     th {
       font-weight: 200;
     }
-    table {    
+    table {   
+      margin-bottom: -15px; 
       text-align: center;
     }
     .section {
@@ -79,8 +84,9 @@ const Main = styled.main`
       margin-top: 0;
       font-size: 0.9em;
     }
-    .info {
+    .sideprof {
       display: flex;
+      margin-bottom: 0;
     }
     .name {
       text-align: center;
@@ -90,7 +96,7 @@ const Main = styled.main`
     }
     .description {
       margin-left: 5px;
-      margin-top: 10px;
+      margin-top: 15px;
       margin-right: 10px;
       font-size: 0.8em;
       text-align: center;
@@ -111,29 +117,45 @@ const Main = styled.main`
     li {
       list-style-type: none;
       border: 1px solid lightgray;
-      margin: 15px 15px;
+      margin: 0 15px 15px 15px;
       padding: 10px;
+      width: 90%;
     }
   }
 `;
 
 const Div2 = styled.div`
+  
   @media only screen and (max-width:600px)  { 
-    display: none;
+    .trending {
+      display: none;
+    }
   }
-  width: 22%;
-  margin-left: 80px;
-  margin-right: 20px;
+
+  @media only screen and (min-width:600px)  { 
+    width: 22%;
+    margin-left: 80px;
+    margin-right: 20px;
+  }
 `;
 
 const Div1 = styled.div`
-  width: 60%;
-  margin-right: 20px;
-  margin-top: -15px;
+  @media only screen and (min-width:600px)  { 
+    width: 60%;
+    margin-right: 20px;
+    margin-top: -15px;
+  }
+  @media only screen and (max-width:600px)  { 
+    width: 95%
+    align-items: center;
+  }
 `;
 
 const Wrapper = styled.div`
   display: flex;
+  @media only screen and (max-width:600px)  { 
+   flex-direction: column;
+  }
 `;
 
 export default function DesktopProfile() {
@@ -166,7 +188,7 @@ export default function DesktopProfile() {
 
         <Wrapper>
           <Div2>
-            <section className="sideprof info">
+            <section className="sideprof">
               <div className="name">
                 <h3>Kristin Hortsch</h3>
                 <p className="handle">@kristinhortsch</p>
@@ -175,7 +197,9 @@ export default function DesktopProfile() {
                 <p>Lover of the laughing, sports, and all things coding.</p>
               </div>
             </section>
-            <Trending />
+            <section className="trending">
+              <Trending />
+            </section>
           </Div2>
           <Div1>
             <UserChirpsContainer />
