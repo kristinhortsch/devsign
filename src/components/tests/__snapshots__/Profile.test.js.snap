@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home matches a snapshot 1`] = `
+Array [
+  <section
+    className="sc-bxivhb jpJyTk"
+  >
+    <header>
+      <h1
+        className="warble"
+      >
+        Warble
+      </h1>
+      <nav
+        className="nav"
+      >
+        <a
+          href="/home"
+          name="home"
+          onClick={[Function]}
+        >
+          <span>
+            Home
+          </span>
+        </a>
+        <section
+          className="sc-htpNat jAdRHI"
+        >
+          <button
+            onClick={[Function]}
+            type="submit"
+          >
+            <img
+              alt="logo"
+              src="../../assets/logo.png"
+            />
+          </button>
+        </section>
+        <a
+          href="/profile"
+          name="profile"
+          onClick={[Function]}
+        >
+          <img
+            alt="prof pic link"
+            src="../assets/prof-pic.png"
+            width="40px"
+          />
+          <span>
+            Profile
+          </span>
+        </a>
+      </nav>
+      <label>
+        Search:
+        <input
+          name="search"
+          placeholder="Search"
+          type="text"
+        />
+      </label>
+    </header>
+  </section>,
+  <main
+    className="sc-dnqmqq bCzHDt"
+  >
+    <section>
+      <img
+        alt="background"
+        className="background"
+        src="../assets/background.jpg"
+      />
+      <div
+        className="section"
+      >
+        <img
+          alt="prof pic"
+          className="prof"
+          src="../assets/prof-pic.png"
+        />
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Chirps
+              </th>
+              <th>
+                Followers
+              </th>
+              <th>
+                Following
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                593
+              </td>
+              <td>
+                388
+              </td>
+              <td>
+                301
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <div
+      className="sc-gqjmRU iRDvLn"
+    >
+      <div
+        className="sc-iwsKbI fMvHgE"
+      >
+        <section
+          className="sideprof info"
+        >
+          <div
+            className="name"
+          >
+            <h3>
+              Kristin Hortsch
+            </h3>
+            <p
+              className="handle"
+            >
+              @kristinhortsch
+            </p>
+          </div>
+          <div
+            className="description"
+          >
+            <p>
+              Lover of the laughing, sports, and all things coding.
+            </p>
+          </div>
+        </section>
+        <aside
+          className="sc-bZQynM kLxNdX"
+        >
+          <h3>
+            Trending
+          </h3>
+          <ul
+            className="sc-EHOje mQOyW"
+          >
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #Bro
+            </li>
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #Blessed
+            </li>
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #NoFilter
+            </li>
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #HumbleBrag
+            </li>
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #JustSaying
+            </li>
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #NationalWineDay
+            </li>
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #RipCity
+            </li>
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #WCW
+            </li>
+            <li
+              className="sc-ifAKCX tCKvm"
+            >
+              #MCM
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <div
+        className="sc-gZMcBi dAlutS"
+      >
+        <main
+          className="sc-htoDjs khvdDw"
+        >
+          <ul />
+        </main>
+      </div>
+    </div>
+  </main>,
+]
+`;
