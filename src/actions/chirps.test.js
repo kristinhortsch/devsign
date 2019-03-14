@@ -1,11 +1,11 @@
-import { FETCH_POPULAR_CHIRPS, fetchPopularChirps, CREATE_CHIRP, createChirp } from './chirps';
+import { FETCH_CHIRPS, fetchChirps, CREATE_CHIRP, createChirp } from './chirps';
 
 describe('actions test', () => {
   it('fetches chirps', () => {
-    const action = fetchPopularChirps();
+    const action = fetchChirps();
 
     expect(action).toEqual({ 
-      type: FETCH_POPULAR_CHIRPS,
+      type: FETCH_CHIRPS,
       payload: Promise.resolve()
     });
   });

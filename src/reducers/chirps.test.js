@@ -9,8 +9,8 @@ describe('chirps reducer', () => {
       }
     };
 
-    const fetchedPopularChirps = reducer(state, {
-      type: 'FETCH_POPULAR_CHIRPS',
+    const fetchedChirps = reducer(state, {
+      type: 'FETCH_CHIRPS',
       payload: [
         { id: 1234, chirp: 'life is great', handle: 'user1', profileImg: '../../assets/prof-pic.png' },
         { id: 1235, chirp: 'life is meh', handle: 'user2', profileImg: '../../assets/prof-pic.png' },
@@ -19,7 +19,7 @@ describe('chirps reducer', () => {
       ]
     });
 
-    expect(fetchedPopularChirps).toEqual({
+    expect(fetchedChirps).toEqual({
       chirps: [
         { id: 1234, chirp: 'life is great', handle: 'user1', profileImg: '../../assets/prof-pic.png' },
         { id: 1235, chirp: 'life is meh', handle: 'user2', profileImg: '../../assets/prof-pic.png' },
