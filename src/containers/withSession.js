@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { login } from '../services/auth';
 import { getToken } from '../selectors/session';
+import Loading from '../components/app/Loading';
 
 export const withSession = Component => {
   class WithSession extends PureComponent {
@@ -17,7 +18,7 @@ export const withSession = Component => {
     }
 
     render() {
-      if(!this.props.token) return <h1>Not Logged In</h1>;
+      if(!this.props.token) return <Loading />;
       return <Component {...this.props } />;
     }
   }
