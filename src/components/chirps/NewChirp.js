@@ -11,7 +11,7 @@ const Wrapper = styled.section`
   .body {
     display: flex;
   }
-  button {
+  .chirpbutton {
     background: #00bfff;
     color: white;
     padding: 8px;
@@ -42,7 +42,7 @@ export default function NewChirp() {
           </label>
         </form>
       </div>
-      <button type="submit">Chirp!</button>
+      <button type="submit" className="chirpbutton">Chirp!</button>
     </Wrapper>
   );
 }

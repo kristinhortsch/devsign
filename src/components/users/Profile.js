@@ -4,7 +4,6 @@ import Trending from '../chirps/Trending';
 import UserChirpsContainer from '../../containers/UserChirpsContainer';
 import styled from 'styled-components';
 import 'normalize.css';
-import MiniProfile from './MiniProfile';
 
 const Main = styled.main`
   @media only screen and (min-width:600px)  { 
@@ -125,13 +124,11 @@ const Main = styled.main`
 `;
 
 const Div2 = styled.div`
-  
   @media only screen and (max-width:600px)  { 
     .trending {
       display: none;
     }
   }
-
   @media only screen and (min-width:600px)  { 
     width: 22%;
     margin-left: 80px;
