@@ -4,6 +4,10 @@ import Profile from '../users/Profile';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../../store';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faHome, faWindowClose } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faHome, faWindowClose);
 
 jest.mock('../../services/auth.js');
 
