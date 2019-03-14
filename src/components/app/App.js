@@ -20,7 +20,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/home" component={withSession(Home)} />
           <Route exact path="/profile" component={withSession(Profile)} />
           <Route  exact path="/callback" component={CallbackContainer} />
           <Route  exact path="/loading" component={Loading} />
