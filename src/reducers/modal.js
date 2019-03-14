@@ -7,16 +7,10 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case SHOW_MODAL:
-      return {
-        ...state,
-        isOpen: true
-      };
+      return action.payload;
     
     case HIDE_MODAL:
-      return {
-        ...state,
-        isOpen: false
-      };
+      return action.payload;
     default: 
       return state;
   }
