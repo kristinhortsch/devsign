@@ -40,8 +40,9 @@ const Main = styled.main`
       left: 0;
     }
   }
-  margin-bottom: 400px;
+  margin-bottom: 350px;
   position: relative;
+  margin-top: 100px;
   img {
     width: 300px;
   }

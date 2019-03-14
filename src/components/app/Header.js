@@ -5,11 +5,11 @@ import ModalContainerChirp from '../../containers/ModalContainerChirp';
 import styled from 'styled-components';
 
 const Section = styled.section`
-.warble {
-  font-size: 4em;
-  margin: 10px auto 0 auto;
-  font-weight: 300;
-  text-align: center;
+ .warble {
+    font-size: 4em;
+    margin: 10px auto 0 auto;
+    font-weight: 300;
+    text-align: center;
   }
   .nav {
     display: flex;

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { setSession } from '../actions/session';
 import { getToken } from '../selectors/session';
 import { Redirect } from 'react-router-dom';
+import Loading from '../components/app/Loading';
 
 class Callback extends PureComponent {
   static propTypes = {
@@ -19,7 +20,7 @@ class Callback extends PureComponent {
     if(this.props.token) {
       return <Redirect to='/home' />;
     }
-    return <h1>LOADING</h1>;
+    return <Loading />;
   }
 }
 

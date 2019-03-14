@@ -39,8 +39,6 @@ const Section = styled.section`
 }
 `;
 
-
-
 export default class ChirpModal extends React.PureComponent {
   static propTypes = {
     onClose: PropTypes.func.isRequired,
