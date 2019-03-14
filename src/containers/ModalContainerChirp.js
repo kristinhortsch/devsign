@@ -4,17 +4,7 @@ import { connect } from 'react-redux';
 import ChirpModal from '../components/chirps/ChirpModal';
 import { showModal, hideModal } from '../actions/modal';
 import { isOpen } from '../selectors/modal';
-import styled from 'styled-components';
-
-const Section = styled.section`
-  img { 
-    width: 40px;
-  }
-  button {
-    border: none;
-    background: white;
-  }
-`;
+import { Section } from './ModalContainerChirpSyles';
 
 export const withModalContainer = Component => {
   class WithModalContainer extends React.PureComponent {
