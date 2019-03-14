@@ -3,9 +3,7 @@ import reducer from './modal';
 describe('modal reducer', () => {
   it('handles show modal action', () => {
     const state = {
-      modal: { 
-        isOpen: false
-      }
+      isOpen: false
     };
 
     const updatedModal = reducer(state, {
@@ -13,14 +11,14 @@ describe('modal reducer', () => {
       payload: true
     });
 
-    expect(updatedModal).toEqual(true);
+    expect(updatedModal).toEqual({
+      isOpen: true
+    });
   });
 
   it('handles hide modal action', () => {
     const state = {
-      modal: { 
-        isOpen: true
-      }
+      isOpen: true
     };
 
     const updatedModal = reducer(state, {
@@ -28,6 +26,8 @@ describe('modal reducer', () => {
       payload: false
     });
 
-    expect(updatedModal).toEqual(false);
+    expect(updatedModal).toEqual({
+      isOpen: false
+    });
   });
 });
