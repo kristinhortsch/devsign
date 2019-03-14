@@ -1,28 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Chirp from './Chirp';
-import styled from 'styled-components';
-
-const Main = styled.main`
-  h2 {
-    font-weight: 300;
-    text-align: center;
-  }
-  ul {
-    padding: 0;
-  }
-  li {
-    list-style-type: none;
-    border: 1px solid lightgray;
-    margin: 15px 15px;
-    padding: 10px;
-  }
-  @media only screen and (min-width:601px)  { 
-    li {
-      width: 90%;
-    }
-  }
-`;
+import { Main } from './PopularChirpsStyles';
 
 export default function PopularChirps({ chirps }) {
   const listOfChirps = chirps.map((chirp, i) => {

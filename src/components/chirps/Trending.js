@@ -1,25 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Li = styled.li`
-  list-style-type: none;
-  margin-bottom: 5px;
-`;
-
-const Ul = styled.ul`
-  margin-bottom: 10px;
-  padding: 0;
-`;
-
-const Aside = styled.aside`
-  border: 1px solid gray;
-  margin-top: 10px;
-  text-align: center;
-  padding: 10px;
-  h3 {
-    font-weight: 200;
-  }
-`;
+import { Aside, Ul, Li } from './TrendingStyles';
 
 export default function Trending() {
   return (

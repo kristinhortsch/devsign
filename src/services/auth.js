@@ -22,7 +22,7 @@ export const handleAuth = () => {
           return resolve({
             token: result.idToken,
             id: info.sub,
-            handle: info.handle,
+            handle: info.nickname,
             name: info.name,
             profileImg: info.picture
           });

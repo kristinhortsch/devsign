@@ -1,53 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { Aside } from './MiniProfileStyles';
 
-const Aside = styled.aside`
-  border: 1px solid gray;
-  position: relative;
-  .background {
-    height: 100px;
-    z-index: -1;
-    width: 100%;
-  }
-  .profpic {
-    height: 8vw;
-    margin-top: -50px;
-  }
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .main {
-    display: flex;
-    font-size: 0.8em;
-  }
-  h3 {
-    margin: 0px;
-  }
-  p {
-    margin: 0px;
-  }
-  th {
-    font-weight: 200;
-    padding-right: 10px;
-  }
-  table {
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-`;
-
-export default function MiniProfile() {
+export default function MiniProfile({ name, handle, profileImg }) {
   return (
     <Aside>
       <img src="../assets/background.jpg" alt="background" className="background"/>
       <div className="main">
-        <img src="../assets/prof-pic.png" alt="prof pic" className="profpic"/>
+        <img src={profileImg} alt="prof pic" className="profpic"/>
         <div className="header">
-          <h3>Kristin Hortsch</h3>
-          <p>@kristinhortsch</p>
+          <h3>{name}</h3>
+          <p>@{handle}</p>
         </div>
       </div>
       <table>
@@ -69,3 +32,9 @@ export default function MiniProfile() {
     </Aside>
   );
 }
+
+MiniProfile.propTypes = {
+  handle: PropTypes.string,
+  profileImg: PropTypes.string,
+  name: PropTypes.string
+};

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Header from './Header';
 import Trending from '../chirps/Trending';
 import ChirpsContainer from '../../containers/PopularChirpsContainer';
-import MiniProfile from '../users/MiniProfile';
+import MiniProfileContainer from '../../containers/MiniProfileContainer';
 import styled from 'styled-components';
 
 const Div1 = styled.div`
@@ -37,7 +37,7 @@ export default function DesktopHome() {
       <Header />
       <Section>
         <Div1>
-          <MiniProfile />
+          <MiniProfileContainer />
           <Trending />
         </Div1>
         <Div2>
