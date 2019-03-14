@@ -17,13 +17,13 @@ const Main = styled.main`
     margin: 15px 15px;
     padding: 10px;
   }
-
   @media only screen and (min-width:601px)  { 
     li {
       width: 90%;
     }
   }
 `;
+
 export default function PopularChirps({ chirps }) {
   const listOfChirps = chirps.map((chirp, i) => {
     return <li key={i}><Chirp chirp={chirp.chirp} handle={chirp.handle} profileImg={chirp.profileImg} /></li>;

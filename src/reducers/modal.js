@@ -11,7 +11,6 @@ export default function reducer(state = initialState, action) {
         ...state,
         isOpen: true
       };
-    
     case HIDE_MODAL:
       return {
         ...state,

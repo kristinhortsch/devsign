@@ -181,6 +181,7 @@ export default function DesktopProfile() {
             <UserChirpsContainer />
           </Div1>
         </Wrapper>
+        
       </Main>
     </Fragment>
   );

@@ -5,12 +5,12 @@ import Profile from '../users/Profile';
 import Login from '../users/Login';
 import Footer from './Footer';
 import Loading from './Loading';
+import CallbackContainer from '../../containers/CallbackContainer';
+import { withSession } from '../../containers/withSession';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHome, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import '../../css/App.css';
 import 'normalize.css';
-import CallbackContainer from '../../containers/CallbackContainer';
-import { withSession } from '../../containers/withSession';
 
 library.add(faHome, faWindowClose);
 

@@ -32,15 +32,13 @@ const Aside = styled.aside`
     font-weight: 200;
     padding-right: 10px;
   }
-  
   table {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 10px;
-
   }
- 
 `;
+
 export default function MiniProfile() {
   return (
     <Aside>
@@ -68,7 +66,6 @@ export default function MiniProfile() {
           </tr>
         </tbody>
       </table>
-      
     </Aside>
   );
 }

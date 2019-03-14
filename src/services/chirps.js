@@ -6,6 +6,3 @@ export const getChirps = () => {
     { id: 1237, chirp: 'life is fabulous', handle: 'user4', profileImg: '../../assets/prof-pic.png' }
   ]);
 };
-
-
-

@@ -20,8 +20,3 @@ export default function Footer() {
     </Section>
   );
 }
-
-
-
-
-

@@ -4,7 +4,6 @@ import Chirp from './Chirp';
 import styled from 'styled-components';
 
 const Main = styled.main`
-
   ul {
     padding: 0;
   }
@@ -14,7 +13,6 @@ const Main = styled.main`
     margin: 15px 15px;
     padding: 10px;
   }
-
   @media only screen and (min-width:601px)  { 
     li {
       width: 90%;

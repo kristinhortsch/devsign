@@ -16,7 +16,6 @@ const Section = styled.section`
   }
 `;
 
-
 export const withModalContainer = Component => {
   class WithModalContainer extends React.PureComponent {
     static propTypes = {
@@ -54,7 +53,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(withModalContainer(ChirpModal));
-
-
-
-

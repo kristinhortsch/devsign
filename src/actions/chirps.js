@@ -12,4 +12,3 @@ export const createChirp = chirp => ({
   type: CREATE_CHIRP,
   payload: chirp
 });
-

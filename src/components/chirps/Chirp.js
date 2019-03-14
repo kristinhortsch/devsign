@@ -23,6 +23,7 @@ const Section = styled.section`
     margin: 0 0 10px 0;
   }
 `;
+
 export default function Chirp({ chirp, handle, profileImg }) {
   return (
     <Section>
