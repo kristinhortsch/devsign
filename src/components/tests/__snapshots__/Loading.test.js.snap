@@ -1,15 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Loading matches a snapshot 1`] = `
-<body>
-  <main>
-    <h1>
-      ...LOADING
-    </h1>
-    <img
-      alt="logo"
-      src="../assets/logo.png"
-    />
-  </main>
-</body>
+<main
+  className="sc-bdVaJa bYWIQP"
+>
+  <h1>
+    ...LOADING
+  </h1>
+  <div
+    className="container"
+  >
+    <div
+      className="path"
+    >
+      <span
+        className="shape trail"
+        id="elem"
+      >
+        <img
+          alt="logo"
+          src="../assets/logo.png"
+        />
+      </span>
+    </div>
+  </div>
+</main>
 `;

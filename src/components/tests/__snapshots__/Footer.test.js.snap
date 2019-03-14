@@ -2,7 +2,7 @@
 
 exports[`Footer matches a snapshot 1`] = `
 <section
-  className="sc-bdVaJa ijQTmh"
+  className="sc-bdVaJa eccard"
 >
   <footer>
     <p>

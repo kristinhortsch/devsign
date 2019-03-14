@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Section = styled.section`
-
 .backdropStyle {
   position: fixed;
   top: 0;
