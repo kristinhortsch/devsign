@@ -4,10 +4,7 @@ import Chirp from './Chirp';
 import styled from 'styled-components';
 
 const Main = styled.main`
-  h2 {
-    font-weight: 300;
-    text-align: center;
-  }
+
   ul {
     padding: 0;
   }
@@ -30,7 +27,6 @@ export default function UserChirps({ chirps }) {
   });
   return (
     <Main>
-      <h2>Popular Chirps</h2>
       <ul>
         {listOfChirps}
       </ul>

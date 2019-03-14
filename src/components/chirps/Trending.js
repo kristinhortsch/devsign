@@ -12,9 +12,10 @@ const Ul = styled.ul`
 `;
 
 const Aside = styled.aside`
-  border: 3px solid blue;
+  border: 1px solid gray;
   margin-top: 10px;
   text-align: center;
+  padding: 10px;
   h3 {
     font-weight: 200;
   }

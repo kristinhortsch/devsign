@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { fetchChirps } from '../actions/chirps';
 import PropTypes from 'prop-types';
-import UserChirps from '../components/chirps/PopularChirps';
+import UserChirps from '../components/chirps/UserChirps';
 import { getChirps } from '../selectors/chirps';
 
 //need to fix selector to match only the user's tweets 

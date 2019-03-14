@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Aside = styled.aside`
-  border: 3px solid blue;
+  border: 1px solid gray;
   position: relative;
   .background {
     height: 100px;

@@ -1,35 +1,57 @@
 import React, { Fragment } from 'react';
 import Header from '../app/Header';
-import Chirp from '../chirps/Chirp';
+import Trending from '../chirps/Trending';
+import UserChirpsContainer from '../../containers/UserChirpsContainer';
 import styled from 'styled-components';
 import 'normalize.css';
 
 const Main = styled.main`
-.background {
-  height: 200px;
-  z-index: -1;
-  width: 100vw;
-  position: absolute;
-}
-.prof {
-  height: 400px;
-  margin-top: 50px;
-}
-th {
-  font-weight: 200;
-}
-table {    
-  text-align: center;
-}
-.section {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-}
+  h3 {
+    font-weight: 600;
+    margin: 0;
+  }
+  .handle {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  .description {
+    font-size: 0.8em;
+  }
+  .background {
+    height: 250px;
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .prof {
+    height: 200px;
+    margin-top: 130px;
+    margin-left: 80px;
+  }
+  th {
+    font-weight: 200;
+  }
+  table { 
+    text-align: center;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    background: white;
+    width: 60%;
+    border-bottom: 2px solid black;
+    height: 50px;
+  }
+  .section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .sideprof {
+    border: 1px solid gray;
+    padding: 10px;
+  }
   @media only screen and (max-width:600px)  { 
-    .trending {
-      display: none;
-    }
     .background {
       height: 100px;
       z-index: -1;
@@ -94,6 +116,26 @@ table {
     }
   }
 `;
+
+const Div2 = styled.div`
+  @media only screen and (max-width:600px)  { 
+    display: none;
+  }
+  width: 22%;
+  margin-left: 80px;
+  margin-right: 20px;
+`;
+
+const Div1 = styled.div`
+  width: 60%;
+  margin-right: 20px;
+  margin-top: -15px;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+`;
+
 export default function DesktopProfile() {
   return (
     <Fragment>
@@ -122,39 +164,23 @@ export default function DesktopProfile() {
           </div>
         </section>
 
-        <section className="info">
-          <div className="name">
-            <h3>Kristin Hortsch</h3>
-            <p>@kristinhortsch</p>
-          </div>
-          <div className="description">
-            <p>Lover of the laughing, sports, and all things coding.</p>
-          </div>
-        </section>
-
-        <hr></hr>
-
-        <section>
-          <h2>Tweets</h2>
-          <ul>
-            <li><Chirp /></li>
-            <li><Chirp /></li>
-            <li><Chirp /></li>
-            <li><Chirp /></li>
-            <li><Chirp /></li>
-          </ul>
-        </section>
-
-        <aside className="trending">
-          <h3>Trending</h3> 
-          <ul>
-            <li>#Trending 1</li>
-            <li>#Trending 2</li>
-            <li>#Trending 3</li>
-            <li>#Trending 4</li>
-            <li>#Trending 5</li>
-          </ul>
-        </aside>
+        <Wrapper>
+          <Div2>
+            <section className="sideprof info">
+              <div className="name">
+                <h3>Kristin Hortsch</h3>
+                <p className="handle">@kristinhortsch</p>
+              </div>
+              <div className="description">
+                <p>Lover of the laughing, sports, and all things coding.</p>
+              </div>
+            </section>
+            <Trending />
+          </Div2>
+          <Div1>
+            <UserChirpsContainer />
+          </Div1>
+        </Wrapper>
       </Main>
     </Fragment>
   );
