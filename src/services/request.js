@@ -2,7 +2,6 @@ import { getToken } from '../selectors/session';
 import store from '../store';
 
 const request = (path, method, body) => {
-  console.log('path', `${process.env.API_URL}${path}`);
   return fetch(`${process.env.API_URL}${path}`, {
     method,
     body: body ? JSON.stringify(body) : null,
@@ -10,11 +9,7 @@ const request = (path, method, body) => {
       Authorization: `Bearer ${getToken(store.getState())}`
     }
   })
-    .then(res=> [res.ok, res.json()])
-    .then(([ok, json]) => {
-      if(!ok) throw json;
-      return json;
-    });
+    .then(res=> res.json());
 };
 
 export const post = (path, body) => request(path, 'POST', body);
