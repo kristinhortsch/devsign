@@ -1,14 +1,16 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import { fetchChirps } from '../actions/chirps';
+import { fetchChirps, updateSearchTerm } from '../actions/chirps';
 import PropTypes from 'prop-types';
 import PopularChirps from '../components/chirps/PopularChirps';
-import { getChirps } from '../selectors/chirps';
+import { getFilteredChirps, getSearchTerm } from '../selectors/chirps';
 
 class PopularChirpsContainer extends PureComponent {
   static propTypes = {
     chirps: PropTypes.array,
-    fetchPopular: PropTypes.func
+    term: PropTypes.string,
+    fetchPopular: PropTypes.func,
+    onChange: PropTypes.func.isRequired
   };
 
   componentDidMount() {
@@ -17,17 +19,21 @@ class PopularChirpsContainer extends PureComponent {
 
   render() {
     return (
-      <PopularChirps chirps={this.props.chirps} />
+      <PopularChirps chirps={this.props.chirps} term={this.props.term} onChange={this.props.onChange}/>
     );
   }
 }
 const mapStateToProps = state => ({
-  chirps: getChirps(state)
+  chirps: getFilteredChirps(state),
+  term: getSearchTerm(state)
 });
 
 const mapDispatchToProps = dispatch => ({
   fetchPopular() {
     dispatch(fetchChirps());
+  },
+  onChange({ target }) {
+    return dispatch(updateSearchTerm(target.value));
   }
 });
 

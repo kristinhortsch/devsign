@@ -57,7 +57,6 @@ export default function Header() {
           <ModalContainerChirp />
           <Link to="/profile" name="profile"><img src='https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png' width="40px" alt="prof pic link"/><span>Profile</span></Link>
         </nav>
-        <label>Search:<input type="text" name="search" placeholder="Search" /></label>
       </header>
     </Section>
   );

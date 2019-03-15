@@ -1,8 +1,9 @@
-import { FETCH_CHIRPS, CREATE_CHIRP } from '../actions/chirps';
+import { FETCH_CHIRPS, CREATE_CHIRP, UPDATE_SEARCH_TERM } from '../actions/chirps';
 
 const initialState = {
   chirps: [],
-  chirp: ''
+  chirp: '',
+  term: ''
 };
 
 export default function reducer(state = initialState, action) {
@@ -16,6 +17,12 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         chirp: action.payload
+      };
+    
+    case UPDATE_SEARCH_TERM:
+      return {
+        ...state,
+        term: action.payload
       };
     default: 
       return state;
