@@ -10,7 +10,7 @@ export default function PopularChirps({ chirps, term, onChange }) {
   return (
     <Main>
       <h2>Popular Chirps</h2>
-      <label>Search:<input type="text" name="search" placeholder="Search" value={term} onChange={onChange} /></label>
+      <label><input type="text" name="search" placeholder="Search" value={term} onChange={onChange} /></label>
       <ul>
         {listOfChirps}
       </ul>

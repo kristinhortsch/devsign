@@ -5,6 +5,12 @@ export const Main = styled.main`
     font-weight: 300;
     text-align: center;
   }
+  input {
+    margin-left: 27%;
+    padding: 8px;
+    border: 1px solid #00bfff;
+    box-shadow: 1px 1px 5px #00bfff;
+  }
   ul {
     padding: 0;
   }
