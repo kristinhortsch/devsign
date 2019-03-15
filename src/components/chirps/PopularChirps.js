@@ -5,7 +5,7 @@ import { Main } from './PopularChirpsStyles';
 
 export default function PopularChirps({ chirps, term, onChange }) {
   const listOfChirps = chirps.map((chirp, i) => {
-    return <li key={i}><Chirp text={chirp.text} handle={chirp.handle} profileImg={chirp.profileImg} /></li>;
+    return <li key={i}><Chirp text={chirp.text} handle={chirp.user.nickname} profileImg={chirp.user.picture} /></li>;
   });
   return (
     <Main>
