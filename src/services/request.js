@@ -9,7 +9,11 @@ const request = (path, method, body) => {
       Authorization: `Bearer ${getToken(store.getState())}`
     }
   })
-    .then(res=> res.json());
+    .then(res=> [res.ok, res.json()])
+    .then(([ok, json]) => {
+      if(!ok) throw json;
+      return json;
+    });
 };
 
 export const post = (path, body) => request(path, 'POST', body);
