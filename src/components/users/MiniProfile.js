@@ -5,7 +5,7 @@ import { Aside } from './MiniProfileStyles';
 export default function MiniProfile({ name, handle, profileImg }) {
   return (
     <Aside>
-      <img src="../../../public/assets/background.jpg" alt="background" className="background"/>
+      <img src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/background_8.44.32_PM.jpg" alt="background" className="background"/>
       <div className="main">
         <img src={profileImg} alt="prof pic" className="profpic"/>
         <div className="header">

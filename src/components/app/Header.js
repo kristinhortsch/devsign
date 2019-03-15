@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ModalContainerChirp from '../../containers/ModalContainerChirp';
 import styled from 'styled-components';
-import profPic from '../../assets/prof-pic.png';
 
 export const Section = styled.section`
  .warble {
@@ -56,7 +55,7 @@ export default function Header() {
             <FontAwesomeIcon icon="home" className="home" alt="home link"/>
           </Link>
           <ModalContainerChirp />
-          <Link to="/profile" name="profile"><img src={profPic} width="40px" alt="prof pic link"/><span>Profile</span></Link>
+          <Link to="/profile" name="profile"><img src='https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png' width="40px" alt="prof pic link"/><span>Profile</span></Link>
         </nav>
         <label>Search:<input type="text" name="search" placeholder="Search" /></label>
       </header>

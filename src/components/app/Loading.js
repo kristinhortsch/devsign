@@ -9,7 +9,7 @@ export default function Loading() {
         <div className="container">
           <div className="path">
             <span id="elem" className="shape trail">
-              <img src="../../../public/assets/logo.png" alt="logo"/>
+              <img src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/logo.png"/>
             </span> 
           </div>
         </div>
