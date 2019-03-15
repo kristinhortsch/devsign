@@ -38,7 +38,7 @@
   * How will you test it?
   * Where will you deploy it?
   * How will you secure it? (user auth)
-* Create a back-end for your twitter clone
+* Create a back-end for your twitter clone (warble)
 * deploy your twitter clone to heroku
 
 ## Day 5: Connect things up
