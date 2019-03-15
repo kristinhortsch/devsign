@@ -12,7 +12,7 @@ export default function Profile({ handle, profileImg, name }) {
       <Header />
       <Main>
         <section>
-          <img src="../assets/background.jpg" alt="background" className="background"/>
+          <img src="../../../public/assets/background.jpg" alt="background" className="background"/>
           <div className="section">
             <img src={profileImg} alt="prof pic" className="prof"/>
             <table>

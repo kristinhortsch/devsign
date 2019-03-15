@@ -5,7 +5,7 @@ export default function NewChirp() {
   return (
     <Wrapper>
       <div className="body">
-        <img src='../assets/prof-pic.png' height="40px" alt="prof pic"/>
+        <img src='../../../public/assets/prof-pic.png' height="40px" alt="prof pic"/>
         <form>
           <label><span>Post</span>
             <textarea name="chirp"></textarea>

@@ -55,7 +55,7 @@ export default function Header() {
             <FontAwesomeIcon icon="home" className="home" alt="home link"/>
           </Link>
           <ModalContainerChirp />
-          <Link to="/profile" name="profile"><img src="../assets/prof-pic.png" width="40px" alt="prof pic link"/><span>Profile</span></Link>
+          <Link to="/profile" name="profile"><img src="../../../public/assets/prof-pic.png" width="40px" alt="prof pic link"/><span>Profile</span></Link>
         </nav>
         <label>Search:<input type="text" name="search" placeholder="Search" /></label>
       </header>

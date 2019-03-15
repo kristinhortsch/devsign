@@ -17,7 +17,7 @@ export const withModalContainer = Component => {
     render() {
       return (
         <Section> 
-          <button type="submit" onClick={this.props.show}><img src='../../assets/logo.png' alt="logo"/></button>
+          <button type="submit" onClick={this.props.show}><img src='../../../public/assets/logo.png' alt="logo"/></button>
           <Component show={this.props.isOpen} onClose={this.props.hide} />
         </Section>  
       );

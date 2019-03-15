@@ -9,7 +9,7 @@ export default function Loading() {
         <div className="container">
           <div className="path">
             <span id="elem" className="shape trail">
-              <img src="../assets/logo.png" alt="logo"/>
+              <img src="../../../public/assets/logo.png" alt="logo"/>
             </span> 
           </div>
         </div>
