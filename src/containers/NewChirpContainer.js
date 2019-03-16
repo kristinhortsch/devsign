@@ -31,6 +31,7 @@ const mapDispatchToProps = dispatch => ({
     dispatch(updateChirp(target.value));
   },
   onSubmit(chirp, event) {
+    console.log(chirp);
     event.preventDefault();
     dispatch(createChirpAction({ chirp }));
   }
