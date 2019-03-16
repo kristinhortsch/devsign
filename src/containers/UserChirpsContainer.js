@@ -3,28 +3,28 @@ import { connect } from 'react-redux';
 import { fetchChirps } from '../actions/chirps';
 import PropTypes from 'prop-types';
 import UserChirps from '../components/chirps/UserChirps';
-import { getChirps } from '../selectors/chirps';
-
-//need to fix selector to match only the user's tweets 
+import { getUserChirps, isLoading } from '../selectors/chirps';
 
 class UserChirpsContainer extends PureComponent {
   static propTypes = {
     chirps: PropTypes.array,
-    fetchPopular: PropTypes.func
+    fetch: PropTypes.func,
+    loading: PropTypes.bool
   };
 
   componentDidMount() {
-    this.props.fetchPopular();
+    this.props.fetch();
   }
 
   render() {
     return (
-      <UserChirps chirps={this.props.chirps} />
+      <UserChirps chirps={this.props.chirps} loading={this.props.loading}/>
     );
   }
 }
-const mapStateToProps = state => ({
-  chirps: getChirps(state)
+const mapStateToProps = (state) => ({
+  chirps: getUserChirps(state),
+  loading: isLoading(state)
 });
 
 const mapDispatchToProps = dispatch => ({
