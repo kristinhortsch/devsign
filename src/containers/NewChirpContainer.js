@@ -28,13 +28,10 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   onChange({ target }) {
-    const factoryMethod = {
-      chirp: updateChirp
-    };
-    dispatch(factoryMethod[target.name](target.value));
+    dispatch(updateChirp(target.value));
   },
   onSubmit(chirp, event) {
-    event.preventDefault(),
+    event.preventDefault();
     dispatch(createChirpAction({ chirp }));
   }
 });

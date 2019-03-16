@@ -22,6 +22,7 @@ class UserChirpsContainer extends PureComponent {
     );
   }
 }
+
 const mapStateToProps = (state) => ({
   chirps: getUserChirps(state),
   loading: isLoading(state)
