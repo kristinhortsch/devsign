@@ -6,7 +6,7 @@ import Loading from '../app/Loading';
 
 export default function PopularChirps({ chirps, term, onChange, loading }) {
   const listOfChirps = chirps.map((chirp, i) => {
-    return <li key={i}><Chirp text={chirp.text} handle={chirp.user.nickname} profileImg={chirp.user.picture} /></li>;
+    return <li key={i}><Chirp text={chirp.text} handle={chirp.user.nickname} profileImg={chirp.user.picture} name={chirp.user.name} /></li>;
   });
   return (
     <Main>
