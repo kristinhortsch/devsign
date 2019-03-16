@@ -1,5 +1,5 @@
 import React from 'react';
-import NewChirp from './NewChirp';
+import NewChirpContainer from '../../containers/NewChirpContainer';
 import PropTypes from 'prop-types';
 import { Section } from './ChirpModalStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,7 +21,7 @@ export default class ChirpModal extends React.PureComponent {
               <FontAwesomeIcon icon="window-close" className="close"/>
             </button>
             <h3>New Chirp</h3>
-            <NewChirp />
+            <NewChirpContainer />
           </div>
         </div>
       </Section>

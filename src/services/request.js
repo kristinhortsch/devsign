@@ -18,4 +18,5 @@ const request = (path, method, body) => {
 
 export const post = (path, body) => request(path, 'POST', body);
 export const get = path => request(path, 'GET');
+export const getById = (path) => request(path, 'GET');
 export const del = (path, body) => request(path, 'DELETE', body);
