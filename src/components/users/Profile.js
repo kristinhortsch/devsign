@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import Header from '../app/Header';
 import Trending from '../chirps/Trending';
-import UserChirpsContainer from '../../containers/UserChirpsContainer';
+import UserChirps from '../chirps/UserChirps';
 import { Main, Div1, Div2, Wrapper } from './ProfileStyles';
 import PropTypes from 'prop-types';
 import 'normalize.css';
 
-export default function Profile({ handle, profileImg, name }) {
+export default function Profile({ chirps, handle, profileImg, name }) {
   return (
     <Fragment>
       <Header />
@@ -50,7 +50,7 @@ export default function Profile({ handle, profileImg, name }) {
             </section>
           </Div2>
           <Div1>
-            <UserChirpsContainer />
+            <UserChirps chirps={chirps} name={name} handle={handle} profileImg={profileImg} />
           </Div1>
         </Wrapper>
         
@@ -62,6 +62,7 @@ export default function Profile({ handle, profileImg, name }) {
 Profile.propTypes = {
   handle: PropTypes.string,
   profileImg: PropTypes.string,
-  name: PropTypes.string
+  name: PropTypes.string,
+  chirps: PropTypes.array
 };
 

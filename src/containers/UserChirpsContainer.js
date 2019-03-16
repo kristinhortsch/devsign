@@ -28,7 +28,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchPopular() {
+  fetch() {
     dispatch(fetchChirps());
   }
 });

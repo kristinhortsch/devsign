@@ -1,10 +1,18 @@
-import { getChirps, createChirp } from '../services/chirps';
+import { getChirps, createChirp, getChirpsById } from '../services/chirps';
 
 export const FETCH_CHIRPS = 'FETCH_CHIRPS';
 export const FETCH_CHIRPS_LOADING = 'FETCH_CHIRPS_LOADING';
 export const fetchChirps = () => ({
   type: FETCH_CHIRPS,
   payload: getChirps(),
+  loading: true
+});
+
+export const FETCH_CHIRPS_BY_ID = 'FETCH_CHIRPS_BY_ID';
+export const FETCH_CHIRPS_BY_ID_LOADING = 'FETCH_CHIRPS_BY_ID_LOADING';
+export const fetchChirpsById = (id) => ({
+  type: FETCH_CHIRPS_BY_ID,
+  payload: getChirpsById(id),
   loading: true
 });
 
