@@ -25,6 +25,7 @@ export const Main = styled.main`
       height: 200px;
       margin-top: 130px;
       margin-left: 80px;
+      margin-bottom: 30px;
       border-radius: 180px;
     }
     th {

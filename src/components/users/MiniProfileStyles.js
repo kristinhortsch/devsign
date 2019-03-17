@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Aside = styled.aside`
   border: 1px solid gray;
   position: relative;
+  margin-top: 30px;
   .background {
     height: 100px;
     z-index: -1;

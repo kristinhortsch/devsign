@@ -17,9 +17,9 @@ export const fetchChirpsById = (id) => ({
 });
 
 export const CREATE_CHIRP = 'CREATE_CHIRP';
-export const createChirpAction = chirp => ({
+export const createChirpAction = (chirp, user) => ({
   type: CREATE_CHIRP,
-  payload: createChirp(chirp),
+  payload: createChirp(chirp, user),
   loading: true
 });
 
