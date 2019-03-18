@@ -2,8 +2,11 @@
 
 exports[`UserChirps matches a snapshot 1`] = `
 <main
-  className="sc-bwzfXH locBlQ"
+  className="sc-bwzfXH jwTdiD"
 >
+  <h2>
+    My Chirps
+  </h2>
   <ul>
     <li>
       <section
@@ -12,6 +15,7 @@ exports[`UserChirps matches a snapshot 1`] = `
         <img
           alt="prof-pic"
           height="40px"
+          src="some image"
         />
         <div
           className="info"
@@ -19,15 +23,17 @@ exports[`UserChirps matches a snapshot 1`] = `
           <h4
             className="name"
           >
-            UserName
+            kristin
           </h4>
           <p
             className="handle"
-          />
+          >
+            kh
+          </p>
           <p
             className="body"
           >
-            this is a chirp
+            hi
           </p>
         </div>
       </section>

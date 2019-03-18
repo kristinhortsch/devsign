@@ -2,11 +2,18 @@
 
 exports[`PopularChirps matches a snapshot 1`] = `
 <main
-  className="sc-bwzfXH jABYjb"
+  className="sc-bwzfXH jwTdiD"
 >
   <h2>
     Popular Chirps
   </h2>
+  <label>
+    <input
+      name="search"
+      placeholder="Search"
+      type="text"
+    />
+  </label>
   <ul>
     <li>
       <section
@@ -15,6 +22,7 @@ exports[`PopularChirps matches a snapshot 1`] = `
         <img
           alt="prof-pic"
           height="40px"
+          src="some image"
         />
         <div
           className="info"
@@ -22,11 +30,13 @@ exports[`PopularChirps matches a snapshot 1`] = `
           <h4
             className="name"
           >
-            UserName
+            kristin
           </h4>
           <p
             className="handle"
-          />
+          >
+            kh
+          </p>
           <p
             className="body"
           >

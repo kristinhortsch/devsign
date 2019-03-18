@@ -2,12 +2,12 @@
 
 exports[`MiniProfile matches a snapshot 1`] = `
 <aside
-  className="sc-bdVaJa hIPwQK"
+  className="sc-bdVaJa ivaCvC"
 >
   <img
     alt="background"
     className="background"
-    src="../assets/background.jpg"
+    src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/background_8.44.32_PM.jpg"
   />
   <div
     className="main"
@@ -15,16 +15,17 @@ exports[`MiniProfile matches a snapshot 1`] = `
     <img
       alt="prof pic"
       className="profpic"
-      src="../assets/prof-pic.png"
+      src="some image"
     />
     <div
       className="header"
     >
       <h3>
-        Kristin Hortsch
+        kristin
       </h3>
       <p>
-        @kristinhortsch
+        @
+        @kristin
       </p>
     </div>
   </div>

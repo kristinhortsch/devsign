@@ -23,7 +23,7 @@ export default function reducer(state = initialState, action) {
     case CREATE_CHIRP: 
       return { 
         ...state,
-        chirps: [...state.chirps, action.payload],
+        chirp: action.payload,
         loading: false
       };
     

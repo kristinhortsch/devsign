@@ -50,7 +50,7 @@ Array [
           >
             <img
               alt="logo"
-              src="../../assets/logo.png"
+              src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/logo.png"
             />
           </button>
         </section>
@@ -61,7 +61,7 @@ Array [
         >
           <img
             alt="prof pic link"
-            src="../assets/prof-pic.png"
+            src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png"
             width="40px"
           />
           <span>
@@ -69,29 +69,21 @@ Array [
           </span>
         </a>
       </nav>
-      <label>
-        Search:
-        <input
-          name="search"
-          placeholder="Search"
-          type="text"
-        />
-      </label>
     </header>
   </section>,
   <section
-    className="sc-gqjmRU cZFHsA"
+    className="sc-VigVT goHndl"
   >
     <div
-      className="sc-iwsKbI fMvHgE"
+      className="sc-gZMcBi jZrjmQ"
     >
       <aside
-        className="sc-dnqmqq KMqHh"
+        className="sc-iwsKbI hOhYWj"
       >
         <img
           alt="background"
           className="background"
-          src="../assets/background.jpg"
+          src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/background_8.44.32_PM.jpg"
         />
         <div
           className="main"
@@ -99,16 +91,17 @@ Array [
           <img
             alt="prof pic"
             className="profpic"
-            src="../assets/prof-pic.png"
+            src=""
           />
           <div
             className="header"
           >
             <h3>
-              Kristin Hortsch
+              
             </h3>
             <p>
-              @kristinhortsch
+              @
+              
             </p>
           </div>
         </div>
@@ -199,14 +192,23 @@ Array [
       </aside>
     </div>
     <div
-      className="sc-gZMcBi iMLyVW"
+      className="sc-gqjmRU dhjaUv"
     >
       <main
-        className="sc-htoDjs kdjiUy"
+        className="sc-htoDjs hMztiY"
       >
         <h2>
           Popular Chirps
         </h2>
+        <label>
+          <input
+            name="search"
+            onChange={[Function]}
+            placeholder="Search"
+            type="text"
+            value=""
+          />
+        </label>
         <ul />
       </main>
     </div>

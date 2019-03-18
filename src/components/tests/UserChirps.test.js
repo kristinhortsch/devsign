@@ -5,9 +5,14 @@ import UserChirps from '../chirps/UserChirps';
 describe('UserChirps', () => {
   it('matches a snapshot', () => {
     const chirps = [{
-      chirp: 'this is a chirp'
+      text: 'hi',
+      user: {
+        nickname: 'kh',
+        handle: '@kh',
+        picture: 'some image',
+        name: 'kristin'
+      }
     }];
-
     const tree = renderer.create(
       <UserChirps chirps={chirps} />
     ).toJSON();

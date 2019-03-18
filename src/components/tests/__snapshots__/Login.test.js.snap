@@ -18,8 +18,7 @@ exports[`Login matches a snapshot 1`] = `
         id="elem"
       >
         <img
-          alt="logo"
-          src="../assets/logo.png"
+          src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/logo.png"
         />
       </span>
     </div>

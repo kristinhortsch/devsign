@@ -2,7 +2,7 @@
 
 exports[`NewChirp matches a snapshot 1`] = `
 <section
-  className="sc-bdVaJa bUPIVd"
+  className="sc-bdVaJa gQsXKm"
 >
   <div
     className="body"
@@ -10,23 +10,24 @@ exports[`NewChirp matches a snapshot 1`] = `
     <img
       alt="prof pic"
       height="40px"
-      src="../assets/prof-pic.png"
+      src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png"
     />
     <form>
       <label>
         <span>
           Post
         </span>
-        <textarea
+        <input
           name="chirp"
         />
       </label>
+      <button
+        className="chirpbutton"
+        type="submit"
+      >
+        Chirp!
+      </button>
     </form>
   </div>
-  <button
-    type="submit"
-  >
-    Chirp!
-  </button>
 </section>
 `;

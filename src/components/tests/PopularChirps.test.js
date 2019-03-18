@@ -4,8 +4,15 @@ import PopularChirps from '../chirps/PopularChirps';
 
 describe('PopularChirps', () => {
   it('matches a snapshot', () => {
-    const chirps = [
-      { chirp: 'hi' }
+    const chirps = [{
+      text: 'hi',
+      user: {
+        nickname: 'kh',
+        handle: '@kh',
+        picture: 'some image',
+        name: 'kristin'
+      }
+    }
     ];
     const tree = renderer.create(
       <PopularChirps chirps={chirps} />

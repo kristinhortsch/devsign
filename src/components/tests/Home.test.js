@@ -10,6 +10,8 @@ import { faHome, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 library.add(faHome, faWindowClose);
 
 jest.mock('../../services/auth.js');
+jest.mock('../../services/chirps.js');
+
 
 describe('Home', () => {
   it('matches a snapshot', () => {

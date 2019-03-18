@@ -50,7 +50,7 @@ Array [
           >
             <img
               alt="logo"
-              src="../../assets/logo.png"
+              src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/logo.png"
             />
           </button>
         </section>
@@ -61,7 +61,7 @@ Array [
         >
           <img
             alt="prof pic link"
-            src="../assets/prof-pic.png"
+            src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png"
             width="40px"
           />
           <span>
@@ -69,24 +69,16 @@ Array [
           </span>
         </a>
       </nav>
-      <label>
-        Search:
-        <input
-          name="search"
-          placeholder="Search"
-          type="text"
-        />
-      </label>
     </header>
   </section>,
   <main
-    className="sc-dnqmqq bCzHDt"
+    className="sc-iwsKbI dBgLJZ"
   >
     <section>
       <img
         alt="background"
         className="background"
-        src="../assets/background.jpg"
+        src="https://res.cloudinary.com/khortsch/image/upload/v1552673467/background_8.44.32_PM.jpg"
       />
       <div
         className="section"
@@ -94,7 +86,6 @@ Array [
         <img
           alt="prof pic"
           className="prof"
-          src="../assets/prof-pic.png"
         />
         <table>
           <thead>
@@ -127,24 +118,22 @@ Array [
       </div>
     </section>
     <div
-      className="sc-gqjmRU iRDvLn"
+      className="sc-VigVT dBuRmn"
     >
       <div
-        className="sc-iwsKbI fMvHgE"
+        className="sc-gZMcBi gleNpW"
       >
         <section
-          className="sideprof info"
+          className="sideprof"
         >
           <div
             className="name"
           >
-            <h3>
-              Kristin Hortsch
-            </h3>
+            <h3 />
             <p
               className="handle"
             >
-              @kristinhortsch
+              @
             </p>
           </div>
           <div
@@ -155,69 +144,76 @@ Array [
             </p>
           </div>
         </section>
-        <aside
-          className="sc-bZQynM kLxNdX"
+        <section
+          className="trending"
         >
-          <h3>
-            Trending
-          </h3>
-          <ul
-            className="sc-EHOje mQOyW"
+          <aside
+            className="sc-bZQynM kLxNdX"
           >
-            <li
-              className="sc-ifAKCX tCKvm"
+            <h3>
+              Trending
+            </h3>
+            <ul
+              className="sc-EHOje mQOyW"
             >
-              #Bro
-            </li>
-            <li
-              className="sc-ifAKCX tCKvm"
-            >
-              #Blessed
-            </li>
-            <li
-              className="sc-ifAKCX tCKvm"
-            >
-              #NoFilter
-            </li>
-            <li
-              className="sc-ifAKCX tCKvm"
-            >
-              #HumbleBrag
-            </li>
-            <li
-              className="sc-ifAKCX tCKvm"
-            >
-              #JustSaying
-            </li>
-            <li
-              className="sc-ifAKCX tCKvm"
-            >
-              #NationalWineDay
-            </li>
-            <li
-              className="sc-ifAKCX tCKvm"
-            >
-              #RipCity
-            </li>
-            <li
-              className="sc-ifAKCX tCKvm"
-            >
-              #WCW
-            </li>
-            <li
-              className="sc-ifAKCX tCKvm"
-            >
-              #MCM
-            </li>
-          </ul>
-        </aside>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #Bro
+              </li>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #Blessed
+              </li>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #NoFilter
+              </li>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #HumbleBrag
+              </li>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #JustSaying
+              </li>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #NationalWineDay
+              </li>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #RipCity
+              </li>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #WCW
+              </li>
+              <li
+                className="sc-ifAKCX tCKvm"
+              >
+                #MCM
+              </li>
+            </ul>
+          </aside>
+        </section>
       </div>
       <div
-        className="sc-gZMcBi dAlutS"
+        className="sc-gqjmRU bbaEzW"
       >
         <main
-          className="sc-htoDjs khvdDw"
+          className="sc-htoDjs hMztiY"
         >
+          <h2>
+            My Chirps
+          </h2>
           <ul />
         </main>
       </div>

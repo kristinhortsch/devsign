@@ -13,9 +13,7 @@ exports[`Chirp matches a snapshot 1`] = `
   >
     <h4
       className="name"
-    >
-      UserName
-    </h4>
+    />
     <p
       className="handle"
     />
