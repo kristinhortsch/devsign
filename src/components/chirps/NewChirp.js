@@ -11,7 +11,7 @@ export default function NewChirp({ onClick, onChange, chirp }) {
           <label><span>Post</span>
             <input name="chirp" value={chirp} onChange={onChange} />
           </label>
-          <button type="submit" className="chirpbutton" onClick={onClick}>Chirp!</button>
+          <button type="submit" className="chirpbutton" onClick={onClick.bind(null, chirp)}>Chirp!</button>
         </form>
       </div>
     </Wrapper>

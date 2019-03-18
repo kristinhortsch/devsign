@@ -18,7 +18,7 @@ class NewChirpContainer extends PureComponent {
 
   render() {
     return (
-      <NewChirp onClick={this.props.onClick.bind(null, this.props.chirp, this.props.user)} onChange={this.props.onChange} chirp={this.props.chirp} chirps={this.props.chirps} />
+      <NewChirp onClick={this.props.onClick} onChange={this.props.onChange} chirp={this.props.chirp} chirps={this.props.chirps} />
     );
   }
 }
@@ -33,9 +33,9 @@ const mapDispatchToProps = dispatch => ({
   onChange({ target }) {
     dispatch(updateChirp(target.value));
   },
-  onClick(event, chirp, user) {
+  onClick(chirp, event) {
     event.preventDefault();
-    dispatch(createChirpAction({ chirp, user }));
+    dispatch(createChirpAction({ chirp }));
   }
 });
 
