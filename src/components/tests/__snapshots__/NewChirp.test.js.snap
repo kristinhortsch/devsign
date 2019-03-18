@@ -19,10 +19,13 @@ exports[`NewChirp matches a snapshot 1`] = `
         </span>
         <input
           name="chirp"
+          onChange={[MockFunction]}
+          value="hey there"
         />
       </label>
       <button
         className="chirpbutton"
+        onClick={[MockFunction]}
         type="submit"
       >
         Chirp!

@@ -13,6 +13,8 @@ describe('UserChirps', () => {
         name: 'kristin'
       }
     }];
+
+    
     const tree = renderer.create(
       <UserChirps chirps={chirps} />
     ).toJSON();

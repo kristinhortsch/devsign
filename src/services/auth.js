@@ -1,3 +1,5 @@
+/*eslint-disable no-console*/
+
 import { WebAuth } from 'auth0-js';
 
 const auth0 = new WebAuth({
