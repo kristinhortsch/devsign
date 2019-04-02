@@ -32,9 +32,7 @@ exports[`UserChirps matches a snapshot 1`] = `
           </p>
           <p
             className="body"
-          >
-            hi
-          </p>
+          />
         </div>
       </section>
     </li>

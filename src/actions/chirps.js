@@ -1,4 +1,4 @@
-import { getChirps, createChirp, getChirpsById } from '../services/chirps';
+import { getChirps, postChirp, getChirpsById } from '../services/chirps';
 
 export const FETCH_CHIRPS = 'FETCH_CHIRPS';
 export const FETCH_CHIRPS_LOADING = 'FETCH_CHIRPS_LOADING';
@@ -17,9 +17,9 @@ export const fetchChirpsById = (id) => ({
 });
 
 export const CREATE_CHIRP = 'CREATE_CHIRP';
-export const createChirpAction = chirp => ({
+export const createChirp = chirp => ({
   type: CREATE_CHIRP,
-  payload: createChirp({ chirp }),
+  payload: postChirp({ chirp }),
   loading: true
 });
 

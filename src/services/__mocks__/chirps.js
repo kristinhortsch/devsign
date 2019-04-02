@@ -2,15 +2,15 @@
 
 export const getChirps = () => {
   return Promise.resolve([
-    { text: 'life is great', user: '1234' },
-    { text: 'life is great', user: '1234' },
-    { text: 'life is great', user: '1234' }
+    { chirp: 'life is great', user: '1234' },
+    { chirp: 'life is great', user: '1234' },
+    { chirp: 'life is great', user: '1234' }
   ]);
 };
 
 export const createChirp = () => {
   return Promise.resolve({
-    text: 'life is great', user: '1234'
+    chirp: 'life is great', user: '1234'
   });
 };
 // export const createChirp = chirp => post('/chirps', chirp);

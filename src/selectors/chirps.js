@@ -1,13 +1,11 @@
 import { getUserId } from './session';
 export const getChirps = state => {
-  console.log(state.chirps.chirps);
   return state.chirps.chirps;
 };
 export const getSearchTerm = state => state.chirps.term;
 export const getFilteredChirps = state => {
   const searchTerm = getSearchTerm(state);
   return getChirps(state).filter(chirp => {
-    console.log(chirp);
     return chirp.chirp.includes(searchTerm);
   });
 };

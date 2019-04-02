@@ -4,7 +4,8 @@ describe('selectors test', () => {
   it('can get a chirp', () => {
     const state = {
       chirp: {
-        chirp: 'a chirp'
+        chirp: 'a chirp',
+        user: '1234'
       }
     };
 
