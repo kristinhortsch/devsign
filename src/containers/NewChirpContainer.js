@@ -13,7 +13,7 @@ class NewChirpContainer extends PureComponent {
     chirps: PropTypes.array.isRequired,
     onChange: PropTypes.func.isRequired,
     handleSubmit: PropTypes.func.isRequired,
-    user: PropTypes.string.isRequired
+    user: PropTypes.string
   };
 
   render() {

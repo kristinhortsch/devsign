@@ -13,7 +13,7 @@ export const getFilteredChirps = state => {
 export const getUserChirps = state => {
   const id = getUserId(state);
   return getChirps(state).filter(chirp => {
-    return chirp.user.user_id === id;
+    return chirp.user.id === id;
   });
 };
 export const isLoading = state => state.chirps.loading;

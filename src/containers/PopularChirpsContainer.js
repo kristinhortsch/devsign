@@ -18,6 +18,10 @@ class PopularChirpsContainer extends PureComponent {
     this.props.fetchPopular();
   }
 
+  componentDidUpdate() { 
+    this.props.fetchPopular();
+  }
+
   render() {
     return (
       <PopularChirps chirps={this.props.chirps} term={this.props.term} onChange={this.props.onChange} loading={this.props.loading}/>

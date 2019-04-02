@@ -16,6 +16,10 @@ class UserChirpsContainer extends PureComponent {
     this.props.fetch();
   }
 
+  componentDidUpdate() {
+    this.props.fetch();
+  }
+
   render() {
     return (
       <UserChirps chirps={this.props.chirps} loading={this.props.loading}/>
