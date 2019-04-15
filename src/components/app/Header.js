@@ -55,7 +55,7 @@ export default function Header() {
             <FontAwesomeIcon icon="home" className="home" alt="home link"/>
           </Link>
           <ModalContainerChirp />
-          <Link to="/profile" name="profile"><img src='https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png' width="40px" alt="prof pic link"/><span>Profile</span></Link>
+          <Link to="/chirps" name="profile"><img src='https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png' width="40px" alt="prof pic link"/><span>Profile</span></Link>
         </nav>
       </header>
     </Section>

@@ -1,18 +1,19 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import { fetchChirps, removeChirp } from '../actions/chirps';
+import { fetchChirp, removeChirp } from '../actions/chirps';
 import PropTypes from 'prop-types';
-import ChirpDetail from '../components/chirps/ChirpDetail';
+// import Chirp from '../components/chirps/Chirp';
 // import { getUserChirps, isLoading } from '../selectors/chirps';
 // import { getName } from '../selectors/session';
 
-class UserChirpsContainer extends PureComponent {
+class ChirpDetailContainer extends PureComponent {
   static propTypes = {
-    
+    fetch: PropTypes.func.isRequired,
+    onClick: PropTypes.func.isRequired
   };
 
   componentDidMount() {
-    
+    this.props.fetch();
   }
 
   componentDidUpdate() {
@@ -21,7 +22,9 @@ class UserChirpsContainer extends PureComponent {
 
   render() {
     return (
-      <ChirpDetail />
+      <>
+      <button onClick={this.props.onClick}>Remove Chirp</button>
+      </>
     );
   }
 }
@@ -31,14 +34,20 @@ const mapStateToProps = () => ({
   
 });
 
-const mapDispatchToProps = () => ({
-  
+const mapDispatchToProps = (dispatch, props) => ({
+  fetch() {
+    dispatch(fetchChirp(props.match.params.id));
+  },
+  onClick() {
+    dispatch(removeChirp(props.match.params.id));
+    window.location = '/chirps';
+  }
 });
 
 export default connect(
   mapStateToProps, 
   mapDispatchToProps
-)(UserChirpsContainer);
+)(ChirpDetailContainer);
 
 
 

@@ -3,7 +3,7 @@ import { Section } from './ChirpStyles';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-export default function Chirp({ id, text, handle, name, profileImg, userName, chirp }) {
+export default function Chirp({ id, text, handle, name, profileImg, userName }) {
   return (
     <Section>
       <img src={profileImg} alt="prof-pic" height="40px"/>
@@ -12,7 +12,7 @@ export default function Chirp({ id, text, handle, name, profileImg, userName, ch
         <p className="handle">{handle}</p>
         <p className="body">{text}</p>
       </div>
-      {userName === name && <Link to={`/profile/${id}`}><button>X</button></Link>}
+      {userName === name && <Link to={`/chirps/${id}`}><button>X</button></Link>}
     </Section>
   );
 }
@@ -23,6 +23,5 @@ Chirp.propTypes = {
   profileImg: PropTypes.string,
   name: PropTypes.string,
   userName: PropTypes.string,
-  chirp: PropTypes.object,
   id: PropTypes.string
 };

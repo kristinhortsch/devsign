@@ -22,8 +22,8 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={Login} />
           <Route exact path="/home" component={withSession(Home)} />
-          <Route exact path="/profile" component={withSession(ProfileContainer)} />
-          <Route exact path="/profile/:id" component={withSession(ChirpDetailContainer)} />
+          <Route exact path="/chirps" component={withSession(ProfileContainer)} />
+          <Route exact path="/chirps/:id" component={withSession(ChirpDetailContainer)} />
           <Route  exact path="/callback" component={CallbackContainer} />
           <Route  exact path="/loading" component={Loading} />
         </Switch>

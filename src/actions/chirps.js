@@ -1,4 +1,4 @@
-import { getChirps, postChirp, getChirpsById, deleteChirp } from '../services/chirps';
+import { getChirps, postChirp, getChirp, deleteChirp, getChirpsById } from '../services/chirps';
 import { createAction } from 'promise-middleware-redux';
 
 export const FETCH_CHIRPS = 'FETCH_CHIRPS';
@@ -50,5 +50,12 @@ export const [
   removeChirp,
   DELETE_CHIRP,
 ] = createAction('DELETE_CHIRP', deleteChirp);
+
+
+export const [
+  fetchChirp,
+  FETCH_CHIRP
+] = createAction('FETCH_CHIRP', getChirp);
+
 
 
