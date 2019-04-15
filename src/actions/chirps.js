@@ -9,6 +9,14 @@ export const fetchChirps = () => ({
   loading: true
 });
 
+export const FETCH_CHIRP = 'FETCH_CHIRP';
+export const FETCH_CHIRP_LOADING = 'FETCH_CHIRP_LOADING';
+export const fetchChirp = (id) => ({
+  type: FETCH_CHIRP,
+  payload: getChirp(id),
+  loading: true
+});
+
 export const FETCH_CHIRPS_BY_ID = 'FETCH_CHIRPS_BY_ID';
 export const FETCH_CHIRPS_BY_ID_LOADING = 'FETCH_CHIRPS_BY_ID_LOADING';
 export const fetchChirpsById = (id) => ({
@@ -52,10 +60,10 @@ export const [
 ] = createAction('DELETE_CHIRP', deleteChirp);
 
 
-export const [
-  fetchChirp,
-  FETCH_CHIRP
-] = createAction('FETCH_CHIRP', getChirp);
+// export const [
+//   fetchChirp,
+//   FETCH_CHIRP
+// ] = createAction('FETCH_CHIRP', getChirp);
 
 
 
