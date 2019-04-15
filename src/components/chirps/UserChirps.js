@@ -4,9 +4,9 @@ import Chirp from './Chirp';
 import { Main } from './PopularChirpsStyles';
 import Loading from '../app/Loading';
 
-export default function UserChirps({ chirps, loading, userName }) {
+export default function UserChirps({ chirps, loading, userName, onClick }) {
   const listOfChirps = chirps.map((chirp, i) => {
-    return <li key={i}><Chirp userName={userName} text={chirp.chirp} handle={chirp.user.nickname} profileImg={chirp.user.picture} name={chirp.user.name} /></li>;
+    return <li key={i}><Chirp id={chirp._id} onClick={onClick} userName={userName} text={chirp.chirp} handle={chirp.user.nickname} profileImg={chirp.user.picture} name={chirp.user.name} /></li>;
   });
   return (
     <Main>
@@ -22,7 +22,8 @@ export default function UserChirps({ chirps, loading, userName }) {
 UserChirps.propTypes = {
   chirps: PropTypes.array,
   term: PropTypes.string,
-  onChange: PropTypes.func,
   loading: PropTypes.bool,
-  userName: PropTypes.string
+  userName: PropTypes.string,
+  onClick: PropTypes.func,
+  id: PropTypes.string
 };

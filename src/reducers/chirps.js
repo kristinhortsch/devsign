@@ -1,4 +1,4 @@
-import { FETCH_CHIRPS, FETCH_CHIRPS_BY_ID, CREATE_CHIRP, UPDATE_SEARCH_TERM } from '../actions/chirps';
+import { FETCH_CHIRPS, FETCH_CHIRPS_BY_ID, CREATE_CHIRP, UPDATE_SEARCH_TERM, DELETE_CHIRP } from '../actions/chirps';
 
 const initialState = {
   chirps: [],
@@ -25,6 +25,11 @@ export default function reducer(state = initialState, action) {
         ...state,
         chirps: [...state.chirps, action.payload],
         loading: false
+      };
+
+    case DELETE_CHIRP: 
+      return {
+        ...initialState
       };
     
     case UPDATE_SEARCH_TERM:

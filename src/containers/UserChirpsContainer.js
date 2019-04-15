@@ -11,7 +11,8 @@ class UserChirpsContainer extends PureComponent {
     chirps: PropTypes.array,
     fetch: PropTypes.func,
     loading: PropTypes.bool,
-    user: PropTypes.string
+    user: PropTypes.string,
+    onClick: PropTypes.func.isRequired
   };
 
   componentDidMount() {
@@ -24,7 +25,7 @@ class UserChirpsContainer extends PureComponent {
 
   render() {
     return (
-      <UserChirps chirps={this.props.chirps} loading={this.props.loading} userName={this.props.user}/>
+      <UserChirps onClick={this.props.onClick} chirps={this.props.chirps} loading={this.props.loading} userName={this.props.user}/>
     );
   }
 }

@@ -1,4 +1,5 @@
-import { getChirps, postChirp, getChirpsById } from '../services/chirps';
+import { getChirps, postChirp, getChirpsById, deleteChirp } from '../services/chirps';
+import { createAction } from 'promise-middleware-redux';
 
 export const FETCH_CHIRPS = 'FETCH_CHIRPS';
 export const FETCH_CHIRPS_LOADING = 'FETCH_CHIRPS_LOADING';
@@ -38,3 +39,16 @@ export const updateChirp = chirp => ({
   payload: chirp,
   loading: true
 });
+
+// export const DELETE_CHIRP = 'DELETE_CHIRP';
+// export const removeChirp = (id) => ({
+//   type: DELETE_CHIRP,
+//   payload: deleteChirp(id),
+// });
+
+export const [
+  removeChirp,
+  DELETE_CHIRP,
+] = createAction('DELETE_CHIRP', deleteChirp);
+
+
