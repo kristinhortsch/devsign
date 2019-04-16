@@ -20,13 +20,12 @@ export default function Chirp({ id, text, handle, name, profileImg, userName }) 
       {userName === name && 
         <Section>
           <img src={profileImg} alt="prof-pic" height="40px"/>
-          <Link to={`/chirps/${id}`} className="link">
-            <div className="info">
-              <h4 className="name">{name}</h4>
-              <h5 className="handle">@{handle}</h5>
-              <p className="body">{text}</p>
-            </div>
-          </Link>
+          <div className="info">
+            <h4 className="name">{name}</h4>
+            <h5 className="handle">@{handle}</h5>
+            <p className="body">{text}</p>
+          </div>
+          <Link to={`/chirps/${id}`} className="link"><button className="chirp-detail">Chirp Detail</button></Link>
         </Section>
       }
     </>

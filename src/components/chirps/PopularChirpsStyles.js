@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h2 {
     font-weight: 300;
     text-align: center;
   }
   input {
-    margin-left: 27%;
     padding: 8px;
     border: 1px solid #00bfff;
     box-shadow: 1px 1px 5px #00bfff;
@@ -22,7 +24,7 @@ export const Main = styled.main`
   }
   @media only screen and (min-width:601px)  { 
     li {
-      width: 90%;
+      width: 100%;
     }
   }
 `;

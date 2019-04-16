@@ -14,6 +14,14 @@ export const Section = styled.section`
     color: white;
     border-radius: 5px;
   }
+  .chirp-detail {
+    height: 35px;
+    background: #00bfff;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
   h4 {
     font-weight: 300;
     margin: 0;
