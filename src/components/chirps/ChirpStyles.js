@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Section = styled.section` 
   margin-top: 0;
   display: flex;
+  .link {
+    text-decoration: none;
+    color: black;
+  }
   button {
     height: 25px;
     background: red;
