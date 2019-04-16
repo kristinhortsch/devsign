@@ -12,7 +12,7 @@ width: 60%;
   text-decoration: none;
   color: black;
 }
-button {
+.x {
   height: 25px;
   background: red;
   color: white;
@@ -27,10 +27,16 @@ h4 {
   flex-direction: column;
   width: 100%;
 }
-.body {
+.back {
+  height: 25px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
 }
 img {
-  margin-right: 10px;
+  margin-right: 20px;
+  border-radius: 180px;
 }
 .handle {
   margin: 0 0 10px 0;

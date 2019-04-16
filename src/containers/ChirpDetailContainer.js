@@ -46,7 +46,6 @@ const mapDispatchToProps = (dispatch, props) => ({
     dispatch(fetchChirp(props.match.params.id));
   },
   onClick() {
-    console.log('button clicked');
     dispatch(removeChirp(props.match.params.id));
   }
 });

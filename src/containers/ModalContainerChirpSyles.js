@@ -8,4 +8,7 @@ export const Section = styled.section`
     border: none;
     background: white;
   }
+  .birdie {
+    cursor: pointer;
+  }
 `;

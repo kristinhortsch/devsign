@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import NewChirp from '../components/chirps/NewChirp';
 import { createChirp, updateChirp } from '../actions/chirps';
-import { hideModal } from '../actions/session';
 import { getChirp } from '../selectors/chirp';
 import { getUserId } from '../selectors/session';
 

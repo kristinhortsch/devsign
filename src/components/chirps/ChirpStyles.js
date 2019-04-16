@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.section` 
   margin-top: 0;
   display: flex;
+  flex-direction: row;
   .link {
     text-decoration: none;
     color: black;
@@ -22,12 +23,12 @@ export const Section = styled.section`
     flex-direction: column;
     width: 100%;
   }
-  .body {
-  }
   img {
-    margin-right: 10px;
+    border-radius: 180px;
+    margin-right: 20px;
   }
   .handle {
     margin: 0 0 10px 0;
+    font-weight: 300;
   }
 `;

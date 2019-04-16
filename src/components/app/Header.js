@@ -24,6 +24,28 @@ export const Section = styled.section`
     font-size: 2em;
     color: black;
   }
+  .home-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  .profile-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  .chirp-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
   label {
     display: flex;
     flex-direction: column;
@@ -51,11 +73,18 @@ export default function Header() {
       <header>
         <h1 className="warble">Warble</h1>
         <nav className="nav">
-          <Link to="/home" name="home"><span>Home</span>
+          <Link to="/home" name="home" className="home-label">
             <FontAwesomeIcon icon="home" className="home" alt="home link"/>
+            Home
           </Link>
-          <ModalContainerChirp />
-          <Link to="/chirps" name="profile"><img src='https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png' width="40px" alt="prof pic link"/><span>Profile</span></Link>
+          <div className="chirp-label">
+            <ModalContainerChirp />
+            New Chirp
+          </div>
+          <Link to="/chirps" name="profile" className="profile-label">
+            <img src='https://res.cloudinary.com/khortsch/image/upload/v1552673467/prof-pic.png' width="40px" alt="prof pic link"/>
+            Profile
+          </Link>
         </nav>
       </header>
     </Section>

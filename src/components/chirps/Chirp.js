@@ -5,28 +5,31 @@ import { Link } from 'react-router-dom';
 
 export default function Chirp({ id, text, handle, name, profileImg, userName }) {
   return (
-    <Section>
+    <>
       {userName !== name && 
-      <>
-        <img src={profileImg} alt="prof-pic" height="40px"/>
-        <div className="info">
-          <h4 className="name">{name}</h4>
-          <p className="handle">{handle}</p>
-          <p className="body">{text}</p>
-        </div>
-      </>
+        <Section>
+          <img src={profileImg} alt="prof-pic" height="40px"/>
+          <div className="info">
+            <h4 className="name">{name}</h4>
+            <h5 className="handle">@{handle}</h5>
+            <p className="body">{text}</p>
+          </div>
+        </Section>
       }
 
       {userName === name && 
-      <Link to={`/chirps/${id}`} className="link">
-        <img src={profileImg} alt="prof-pic" height="40px"/>
-        <div className="info">
-          <h4 className="name">{name}</h4>
-          <p className="handle">{handle}</p>
-          <p className="body">{text}</p>
-        </div>
-      </Link>}
-    </Section>
+        <Section>
+          <img src={profileImg} alt="prof-pic" height="40px"/>
+          <Link to={`/chirps/${id}`} className="link">
+            <div className="info">
+              <h4 className="name">{name}</h4>
+              <h5 className="handle">@{handle}</h5>
+              <p className="body">{text}</p>
+            </div>
+          </Link>
+        </Section>
+      }
+    </>
   );
 }
 
