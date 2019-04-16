@@ -48,16 +48,16 @@ export const updateChirp = chirp => ({
   loading: true
 });
 
-// export const DELETE_CHIRP = 'DELETE_CHIRP';
-// export const removeChirp = (id) => ({
-//   type: DELETE_CHIRP,
-//   payload: deleteChirp(id),
-// });
+export const DELETE_CHIRP = 'DELETE_CHIRP';
+export const removeChirp = (id) => ({
+  type: DELETE_CHIRP,
+  payload: deleteChirp(id),
+});
 
-export const [
-  removeChirp,
-  DELETE_CHIRP,
-] = createAction('DELETE_CHIRP', deleteChirp);
+// export const [
+//   removeChirp,
+//   DELETE_CHIRP,
+// ] = createAction('DELETE_CHIRP', deleteChirp);
 
 
 // export const [
