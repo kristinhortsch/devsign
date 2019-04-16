@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import NewChirp from '../components/chirps/NewChirp';
-import { createChirp, updateChirp } from '../actions/chirps';
+import { createChirp, updateChirp, fetchChirps } from '../actions/chirps';
 import { getChirp } from '../selectors/chirp';
 import { getUserId } from '../selectors/session';
 
@@ -33,6 +33,7 @@ const mapDispatchToProps = dispatch => ({
   handleSubmit(chirp, event) {
     event.preventDefault();
     dispatch(createChirp({ chirp }));
+    dispatch(fetchChirps());
   }
 });
 

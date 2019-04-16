@@ -10,7 +10,7 @@ export default function UserChirps({ chirps, loading, userName, onClick }) {
   });
   return (
     <Main>
-      {loading && <Loading />}
+      {loading === true && <Loading />}
       <h2>My Chirps</h2>
       <ul>
         {listOfChirps}

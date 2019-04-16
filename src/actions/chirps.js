@@ -1,12 +1,11 @@
 import { getChirps, postChirp, getChirp, deleteChirp, getChirpsById } from '../services/chirps';
-import { createAction } from 'promise-middleware-redux';
 
 export const FETCH_CHIRPS = 'FETCH_CHIRPS';
 export const FETCH_CHIRPS_LOADING = 'FETCH_CHIRPS_LOADING';
 export const fetchChirps = () => ({
   type: FETCH_CHIRPS,
   payload: getChirps(),
-  loading: true
+  loadStart: FETCH_CHIRPS_LOADING
 });
 
 export const FETCH_CHIRP = 'FETCH_CHIRP';
@@ -14,7 +13,7 @@ export const FETCH_CHIRP_LOADING = 'FETCH_CHIRP_LOADING';
 export const fetchChirp = (id) => ({
   type: FETCH_CHIRP,
   payload: getChirp(id),
-  loading: true
+  loadStart: FETCH_CHIRP_LOADING
 });
 
 export const FETCH_CHIRPS_BY_ID = 'FETCH_CHIRPS_BY_ID';
