@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { fetchChirps, updateSearchTerm } from '../actions/chirps';
 import PropTypes from 'prop-types';
 import PopularChirps from '../components/chirps/PopularChirps';
-import { getChirps, getSearchTerm, isLoading } from '../selectors/chirps';
+import { getFilteredChirps, getSearchTerm, isLoading } from '../selectors/chirps';
 
 class PopularChirpsContainer extends PureComponent {
   static propTypes = {
@@ -29,7 +29,7 @@ class PopularChirpsContainer extends PureComponent {
   }
 }
 const mapStateToProps = state => ({
-  chirps: getChirps(state),
+  chirps: getFilteredChirps(state),
   term: getSearchTerm(state),
   loading: isLoading(state)
 });

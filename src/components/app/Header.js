@@ -30,6 +30,12 @@ export const Section = styled.section`
     align-items: center;
     text-decoration: none;
     color: black;
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+  .home-link {
+    text-decoration: none;
+    color: black;    
   }
   .profile-label {
     display: flex;
@@ -37,6 +43,8 @@ export const Section = styled.section`
     align-items: center;
     text-decoration: none;
     color: black;
+    font-size: 0.8em;
+    font-weight: 300;
   }
   .chirp-label {
     display: flex;
@@ -45,6 +53,8 @@ export const Section = styled.section`
     text-decoration: none;
     color: black;
     cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 300;
   }
   label {
     display: flex;
@@ -73,9 +83,9 @@ export default function Header() {
       <header>
         <h1 className="warble">Warble</h1>
         <nav className="nav">
-          <Link to="/home" name="home" className="home-label">
+          <Link to="/home" name="home" className="home-link">
             <FontAwesomeIcon icon="home" className="home" alt="home link"/>
-            Home
+            <span className="home-label">Home</span>
           </Link>
           <div className="chirp-label">
             <ModalContainerChirp />
