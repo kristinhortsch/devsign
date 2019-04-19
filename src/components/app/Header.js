@@ -4,7 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ModalContainerChirp from '../../containers/ModalContainerChirp';
 import styled from 'styled-components';
 
-export const Section = styled.section`
+export const Section = styled.section` 
+  @media only screen and (min-width:600px)  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
  .warble {
     font-size: 4em;
     margin: 10px auto 0 auto;

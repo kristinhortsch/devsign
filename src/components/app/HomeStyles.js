@@ -20,7 +20,8 @@ export const Div2 = styled.div`
 `;
 
 export const Section = styled.section`
-  @media only screen and (min-width:600px)  { 
+  @media only screen and (min-width:600px)  {
+    margin-top: 150px; 
     display: flex;
     flex-direction: row;
   }

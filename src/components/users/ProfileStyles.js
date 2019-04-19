@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Main = styled.main`
   @media only screen and (min-width:600px)  { 
+    margin-top: 150px; 
     h3 {
       font-weight: 600;
       margin: 0;
