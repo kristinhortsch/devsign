@@ -31,7 +31,7 @@ export const Section = styled.section`
     flex-direction: column;
     width: 100%;
   }
-  img {
+  .prof-pic {
     border-radius: 180px;
     margin-right: 20px;
   }

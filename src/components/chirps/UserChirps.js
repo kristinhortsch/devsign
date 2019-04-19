@@ -6,7 +6,7 @@ import Loading from '../app/Loading';
 
 export default function UserChirps({ chirps, loading, userName, onClick }) {
   const listOfChirps = chirps.map((chirp, i) => {
-    return <li key={i}><Chirp id={chirp._id} onClick={onClick} userName={userName} text={chirp.chirp} handle={chirp.user.nickname} profileImg={chirp.user.picture} name={chirp.user.name} /></li>;
+    return <li key={i}><Chirp id={chirp._id} timestamp={chirp.timestamp} onClick={onClick} userName={userName} text={chirp.chirp} handle={chirp.user.nickname} profileImg={chirp.user.picture} name={chirp.user.name} /></li>;
   });
   return (
     <Main>
